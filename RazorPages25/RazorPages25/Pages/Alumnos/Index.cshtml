@@ -5,3 +5,23 @@
 }
 
 <h1>Alumnos</h1>
+<h3>@Model.Alumnos.Count() Alumnos</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var alumno in Model.Alumnos)
+        {
+            <tr>
+                <td>@alumno.Nombre</td>
+                <td>@alumno.Email</td>
+                <td>@alumno.CursoID</td>
+            </tr>
+        }
+    </tbody>
+</table>

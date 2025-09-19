@@ -38,3 +38,7 @@ C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPag
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\obj\Debug\net6.0\RazorPages25.csproj.AssemblyReference.cache
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\obj\Debug\net6.0\RazorPag.7F4CB4B5.Up2Date
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\bin\Debug\net6.0\RazorPages.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\bin\Debug\net6.0\RazorPages.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\bin\Debug\net6.0\RazorPages.Services.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\bin\Debug\net6.0\RazorPages.Modelos.pdb

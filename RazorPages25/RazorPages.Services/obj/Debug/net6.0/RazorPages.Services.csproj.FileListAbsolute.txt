@@ -1,0 +1,16 @@
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\bin\Debug\net6.0\RazorPages.Services.deps.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\bin\Debug\net6.0\RazorPages.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\bin\Debug\net6.0\RazorPages.Services.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\bin\Debug\net6.0\RazorPages.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\bin\Debug\net6.0\RazorPages.Modelos.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.csproj.AssemblyReference.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.AssemblyInfo.cs
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.sourcelink.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPag.CA0683F3.Up2Date
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\refint\RazorPages.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\RazorPages.Services.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages.Services\obj\Debug\net6.0\ref\RazorPages.Services.dll
