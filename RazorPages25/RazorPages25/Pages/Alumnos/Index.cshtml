@@ -6,22 +6,20 @@
 
 <h1>Alumnos</h1>
 <h3>@Model.Alumnos.Count() Alumnos</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var alumno in Model.Alumnos)
-        {
-            <tr>
-                <td>@alumno.Nombre</td>
-                <td>@alumno.Email</td>
-                <td>@alumno.CursoID</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="card-deck">
+    @foreach (var alumno in Model.Alumnos)
+    {
+        var photo = "~/images/" + (alumno.Foto ?? "noImage.jpg");
+        <div class="card-m-3" style="min-width:18rem; max-width:30.5%">
+            <div class="card-header">
+                <h3 class="card-title">@alumno.Nombre</h3>
+            </div>
+            <img class="card-img-top imageThumbail" asp-append-version="true" src="@photo">
+            <div class="card-footer text-center">
+                <a asp-page="/Alumnos/Details" asp-route-ID="@alumno.Id" class="btn btn-primary m-1">View</a>
+                <a asp-page="#" class="btn btn-primary m-1">Edit</a>
+                <a asp-page="#" class="btn btn-danger m-1">Delete</a>
+            </div>
+        </div>
+    }
+</div>

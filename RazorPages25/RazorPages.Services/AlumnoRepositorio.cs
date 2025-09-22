@@ -26,5 +26,10 @@ namespace RazorPages.Services
         {
             return listaAlumnos;
         }
+
+        public Alumno GetAlumno(int id)
+        {
+            return listaAlumnos.FirstOrDefault(a => a.Id == id);
+        }
     }
 }
