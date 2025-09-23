@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+.imageThumbail {
+    width: 150px;
+    height: 200px;
+}
