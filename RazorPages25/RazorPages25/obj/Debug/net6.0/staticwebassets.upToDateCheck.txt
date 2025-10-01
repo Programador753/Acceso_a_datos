@@ -1,6 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\archidona.jpg
+wwwroot\images\archidona.png
 wwwroot\images\arnas.jpg
 wwwroot\images\ballonga.jpg
 wwwroot\images\bueno.jpg

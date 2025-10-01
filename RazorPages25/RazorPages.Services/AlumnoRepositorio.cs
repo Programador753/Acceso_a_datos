@@ -31,5 +31,14 @@ namespace RazorPages.Services
         {
             return listaAlumnos.FirstOrDefault(a => a.Id == id);
         }
+
+        public void Update(Alumno alumnoActualizado)
+        {
+            Alumno alumno = listaAlumnos.FirstOrDefault(a => a.Id == alumnoActualizado.Id);
+            alumno.Nombre = alumnoActualizado.Nombre;
+            alumno.Email = alumnoActualizado.Email;
+            alumno.CursoID = alumnoActualizado.CursoID;
+            alumno.Foto = alumnoActualizado.Foto;
+        }
     }
 }
