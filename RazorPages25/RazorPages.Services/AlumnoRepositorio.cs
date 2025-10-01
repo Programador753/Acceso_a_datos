@@ -22,6 +22,13 @@ namespace RazorPages.Services
 
         }
 
+        public void Add(Alumno alumnoNuevo)
+        {
+            alumnoNuevo.Id = listaAlumnos.Max(a => a.Id) + 1;
+            listaAlumnos.Add(alumnoNuevo);
+
+        }
+
         public IEnumerable<Alumno> GetAllAlumnos()
         {
             return listaAlumnos;
@@ -40,5 +47,7 @@ namespace RazorPages.Services
             alumno.CursoID = alumnoActualizado.CursoID;
             alumno.Foto = alumnoActualizado.Foto;
         }
+
+        
     }
 }

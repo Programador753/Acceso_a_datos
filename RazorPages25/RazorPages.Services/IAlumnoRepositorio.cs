@@ -6,6 +6,7 @@ namespace RazorPages.Services
     {
         IEnumerable<Alumno> GetAllAlumnos();
         Alumno GetAlumno(int id);
-        void Update(Alumno alumnoActualizado);  
+        void Update(Alumno alumnoActualizado); 
+        void Add(Alumno alumnoNuevo);
     }
 }
