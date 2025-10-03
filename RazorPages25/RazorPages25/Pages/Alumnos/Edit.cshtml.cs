@@ -9,6 +9,7 @@ namespace RazorPages25.Pages.Alumnos
     {
         private readonly IAlumnoRepositorio alumnoRepositorio;
         private readonly IWebHostEnvironment webHostEnvironment;
+        [BindProperty]
         public Alumno alumno;
         public IFormFile Photo { get; set; } // Para manejar la subida de archivos
         public EditModel(IAlumnoRepositorio alumnoRepositorio, IWebHostEnvironment webHostEnvironment) // Inyección de dependencias
@@ -30,17 +31,31 @@ namespace RazorPages25.Pages.Alumnos
 
         public IActionResult OnPost(Alumno alumno) // Recibir el objeto Alumno actualizado desde el formulario
         {
-            if (Photo != null)
+            if (ModelState.IsValid)
             {
-                if (alumno.Foto != null)
+                if (Photo != null)
                 {
-                    string filePath = Path.Combine(webHostEnvironment.WebRootPath, "images", alumno.Foto);
-                    System.IO.File.Delete(filePath);
+                    if (alumno.Foto != null)
+                    {
+                        string filePath = Path.Combine(webHostEnvironment.WebRootPath, "images", alumno.Foto);
+                        System.IO.File.Delete(filePath);
+                    }
+
+                    alumno.Foto = ProcessUploadedFile();
                 }
-                alumno.Foto = ProcessUploadedFile();
+
+                if (alumno.Id > 0)
+                {
+                    alumnoRepositorio.Update(alumno);
+                }
+                else
+                {
+                    alumnoRepositorio.Add(alumno);
+                }
+
+                return RedirectToPage("Index");
             }
-            alumnoRepositorio.Update(alumno);
-            return RedirectToPage("Index");
+            return Page();
         }
 
         private string ProcessUploadedFile() // Subir la foto al servidor

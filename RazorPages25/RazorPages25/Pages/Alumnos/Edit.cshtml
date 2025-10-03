@@ -3,9 +3,10 @@
 @model RazorPages25.Pages.Alumnos.EditModel
 @{
     var photo = "~/images/" + (Model.alumno.Foto ?? "noImage.jpg");
+    var titulo = Model.alumno.Id > 0 ? "Editando alumno " + Model.alumno.Nombre : "Añadir alumno";
 }
 
-<h1>Edición datos alumnos</h1>
+<h1>@titulo</h1>
 <form method="post" class="mt-3" enctype="multipart/form-data">
     <input hidden asp-for="alumno.Id"/>
     <input hidden asp-for="alumno.Foto" />
