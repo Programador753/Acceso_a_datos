@@ -10,7 +10,8 @@ namespace RazorPages25.Pages.Alumnos
         private readonly IAlumnoRepositorio alumnoRepositorio;
         private readonly IWebHostEnvironment webHostEnvironment;
         [BindProperty]
-        public Alumno alumno;
+        public Alumno alumno { get; set; } // Propiedad para enlazar el formulario
+        [BindProperty]
         public IFormFile Photo { get; set; } // Para manejar la subida de archivos
         public EditModel(IAlumnoRepositorio alumnoRepositorio, IWebHostEnvironment webHostEnvironment) // Inyección de dependencias
         {

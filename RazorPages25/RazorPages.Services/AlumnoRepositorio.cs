@@ -28,6 +28,14 @@ namespace RazorPages.Services
             listaAlumnos.Add(alumnoNuevo);
 
         }
+        public void Delete(int id)
+        {
+            Alumno alumnoBorrar = listaAlumnos.FirstOrDefault(a => a.Id == id);
+            if (alumnoBorrar != null)
+            {
+                listaAlumnos.Remove(alumnoBorrar);
+            }
+        }
 
         public IEnumerable<Alumno> GetAllAlumnos()
         {

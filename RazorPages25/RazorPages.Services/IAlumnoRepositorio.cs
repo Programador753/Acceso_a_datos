@@ -8,5 +8,6 @@ namespace RazorPages.Services
         Alumno GetAlumno(int id);
         void Update(Alumno alumnoActualizado); 
         void Add(Alumno alumnoNuevo);
+        void Delete(int id);
     }
 }
