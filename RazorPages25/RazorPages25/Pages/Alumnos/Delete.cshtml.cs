@@ -7,7 +7,6 @@ namespace RazorPages25.Pages.Alumnos
 {
     public class DeleteModel : PageModel
     {
-        public int Id { get; set; }
         private readonly IAlumnoRepositorio alumnoRepositorio;
         [BindProperty]
         public Alumno alumno { get; set; } // Propiedad para enlazar el formulario
