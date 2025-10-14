@@ -1,8 +1,11 @@
 ﻿@page
 @model RazorPages25.Pages.Alumnos.IndexModel
 @{
-    ViewData["Title"] = "Alumnos";
 }
+
+<div class="col-sm-8">
+    @await Component.InvokeAsync("AlumnosCurso")
+</div>
 
 <div class="card-group">
     @foreach (var alumno in Model.Alumnos)

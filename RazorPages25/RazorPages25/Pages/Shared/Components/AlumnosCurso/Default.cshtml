@@ -1,0 +1,20 @@
+﻿@model IEnumerable<CursoCuantos>
+<h3>Alumnos por Curso</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Curso</th>
+            <th>Número de Alumnos</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var curso in Model)
+    {
+        <tr>
+            <td>@curso.Clase</td>
+            <td>@curso.NumAlumnos</td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -3,16 +3,17 @@ using RazorPages.Services;
 
 namespace RazorPages25.Components
 {
-    public class AlumnosCursoViewComponents : ViewComponent
+    public class AlumnosCursoViewComponent : ViewComponent
     {
         public IAlumnoRepositorio AlumnoRepositorio { get; }
-        public AlumnosCursoViewComponents(IAlumnoRepositorio alumnoRepositorio)
+        public AlumnosCursoViewComponent(IAlumnoRepositorio alumnoRepositorio)
         {
             AlumnoRepositorio = alumnoRepositorio;
         }
+
         public IViewComponentResult Invoke()
         {
-            var resultado = AlumnoRepositorio.AlumnosPorCurso();
+            var resultado = AlumnoRepositorio.AlumnoPorCurso();
             return View(resultado);
         }
     }
