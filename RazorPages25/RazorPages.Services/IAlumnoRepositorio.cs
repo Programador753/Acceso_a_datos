@@ -10,6 +10,6 @@ namespace RazorPages.Services
         void Add(Alumno alumnoNuevo);
         void Delete(int id);
 
-        public IEnumerable<CursoCuantos> AlumnoPorCurso();
+        public IEnumerable<CursoCuantos> AlumnoPorCurso(Curso? curso);
     }
 }

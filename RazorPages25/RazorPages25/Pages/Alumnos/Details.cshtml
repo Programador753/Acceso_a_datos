@@ -3,7 +3,9 @@
 @{
     var photo = "~/images/" + (Model.alumno.Foto ?? "noImage.jpg");
 }
-
+<div class="col-sm-8">
+    @await Component.InvokeAsync("AlumnosCurso", new{ curso = Model.alumno.CursoID})
+</div>
 <div class="card-m-3" style="min-width:10rem; max-width:18rem; position:relative">
     <div class="card-header text-center">
         <h3>@Model.alumno.Nombre</h3>

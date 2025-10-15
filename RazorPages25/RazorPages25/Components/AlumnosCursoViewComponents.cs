@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RazorPages.Modelos;
 using RazorPages.Services;
 
 namespace RazorPages25.Components
@@ -11,9 +12,9 @@ namespace RazorPages25.Components
             AlumnoRepositorio = alumnoRepositorio;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(Curso? curso = null)
         {
-            var resultado = AlumnoRepositorio.AlumnoPorCurso();
+            var resultado = AlumnoRepositorio.AlumnoPorCurso(curso);
             return View(resultado);
         }
     }

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPages.Modelos;
 using RazorPages.Services;
@@ -8,6 +9,8 @@ namespace RazorPages25.Pages.Alumnos
         private readonly IAlumnoRepositorio alumnoRepositorio;
 
         public List<Alumno> Alumnos { get; set; }
+        [BindProperty]
+        public string elementoABusacar { get; set; }
         public IndexModel(IAlumnoRepositorio alumnoRepositorio)
         {
             this.alumnoRepositorio = alumnoRepositorio;

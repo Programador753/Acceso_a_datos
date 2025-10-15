@@ -2,7 +2,14 @@
 @model RazorPages25.Pages.Alumnos.IndexModel
 @{
 }
-
+<form method="get">
+    <div class="input-ground">
+        <input class="form-control" asp-for="elementoABusacar"/>
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Busca!</button>
+        </div>
+    </div>
+</form>
 <div class="col-sm-8">
     @await Component.InvokeAsync("AlumnosCurso")
 </div>

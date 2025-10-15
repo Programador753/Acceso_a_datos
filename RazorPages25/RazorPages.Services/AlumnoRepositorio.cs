@@ -56,13 +56,18 @@ namespace RazorPages.Services
             alumno.Foto = alumnoActualizado.Foto;
         }
 
-        public IEnumerable<CursoCuantos> AlumnoPorCurso()
+        public IEnumerable<CursoCuantos> AlumnoPorCurso(Curso? curso)
         {
-           return listaAlumnos.GroupBy(a => a.CursoID).Select(g => new CursoCuantos()
-           {
+            IEnumerable<Alumno> consulta = listaAlumnos;
+            if (curso.HasValue)
+            {
+                consulta = consulta.Where(a => a.CursoID == curso);
+            }
+            return consulta.GroupBy(a => a.CursoID).Select(g => new CursoCuantos()
+            {
                Clase = g.Key.Value,
                NumAlumnos = g.Count()
-           });
+            });
         }
     }
 }
