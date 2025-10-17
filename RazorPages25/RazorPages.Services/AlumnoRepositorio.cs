@@ -69,5 +69,14 @@ namespace RazorPages.Services
                NumAlumnos = g.Count()
             });
         }
+
+        public IEnumerable<Alumno> Busqueda(string elementoABuscar)
+        {
+            if (string.IsNullOrEmpty(elementoABuscar))
+            {
+                return listaAlumnos;
+            }
+            return listaAlumnos.Where(a => a.Nombre.Contains(elementoABuscar) || a.Email.Contains(elementoABuscar));
+        }
     }
 }

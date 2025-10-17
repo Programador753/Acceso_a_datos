@@ -11,5 +11,6 @@ namespace RazorPages.Services
         void Delete(int id);
 
         public IEnumerable<CursoCuantos> AlumnoPorCurso(Curso? curso);
+        public IEnumerable<Alumno> Busqueda(string elementoABuscar);
     }
 }
