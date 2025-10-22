@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using RazorPages.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ IConfiguration configuration = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json")
         .AddEnvironmentVariables()
         .Build();
+
+builder.Services.AddDbContext<ColegioDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("ColegioDBConnection")));
 
 var app = builder.Build();
 

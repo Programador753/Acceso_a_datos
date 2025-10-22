@@ -8,7 +8,7 @@ using RazorPages.Modelos;
 
 namespace RazorPages.Services
 {
-    internal class ColegioDbContext : DbContext
+    public class ColegioDbContext : DbContext
     {
         protected ColegioDbContext(DbContextOptions<ColegioDbContext> options) : base(options)
         {
