@@ -10,7 +10,7 @@ namespace RazorPages.Services
 {
     public class ColegioDbContext : DbContext
     {
-        protected ColegioDbContext(DbContextOptions<ColegioDbContext> options) : base(options)
+        public ColegioDbContext(DbContextOptions<ColegioDbContext> options) : base(options)
         {
 
         }

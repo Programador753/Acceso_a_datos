@@ -43,12 +43,8 @@ namespace RazorPages.Services
 
         public void Update(Alumno alumnoActualizado)
         {
-            Alumno alumno = Context.Alumnos.Find(alumnoActualizado.Id);
-            alumno.Nombre = alumnoActualizado.Nombre;
-            alumno.Email = alumnoActualizado.Email;
-            alumno.CursoID = alumnoActualizado.CursoID;
-            alumno.Foto = alumnoActualizado.Foto;
-            Context.SaveChanges();
+            var alumno = Context.Alumnos.Attach(alumnoActualizado);
+            alumno.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
         }
 
         public IEnumerable<CursoCuantos> AlumnoPorCurso(Curso? curso)
