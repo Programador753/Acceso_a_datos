@@ -1,9 +1,11 @@
-﻿using RazorPages.Modelos;
+﻿using Microsoft.EntityFrameworkCore;
+using RazorPages.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace RazorPages.Services
 {
@@ -17,8 +19,17 @@ namespace RazorPages.Services
         }
         public void Add(Alumno alumnoNuevo)
         {
-            Context.Alumnos.Add(alumnoNuevo);
-            Context.SaveChanges();
+            //Context.Alumnos.Add(alumnoNuevo);
+            //Context.SaveChanges();
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Nombre", alumnoNuevo.Nombre),
+                new SqlParameter("@Email", alumnoNuevo.Email),
+                new SqlParameter("@Foto", alumnoNuevo.Foto),
+                new SqlParameter("@CursoID", alumnoNuevo.CursoID)
+            };
+
+            Context.Database.ExecuteSqlRaw("EXEC InsertarAlumno @Nombre, @Email, @Foto, @CursoID", parameters);
 
         }
         public void Delete(int id)
@@ -30,15 +41,18 @@ namespace RazorPages.Services
                 Context.SaveChanges();
             }
         }
-
         public IEnumerable<Alumno> GetAllAlumnos()
         {
-            return Context.Alumnos;
+            return Context.Alumnos.FromSqlRaw("Select * from Alumnos").ToList();
         }
 
         public Alumno GetAlumno(int id)
         {
-            return Context.Alumnos.Find(id);
+            //return Context.Alumnos.Find(id);
+            SqlParameter parameter = new SqlParameter("@Id", id);
+            return Context.Alumnos.FromSqlRaw<Alumno>("GetAlumnoById @Id", parameter)
+                .ToList()
+                .FirstOrDefault();
         }
 
         public void Update(Alumno alumnoActualizado)
