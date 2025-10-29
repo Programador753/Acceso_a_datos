@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RazorPages.Modelos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3292f359e6ee4f036f4712253af5aed45c323ed5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77db0b30444f00c458c30aa64ab40a140a1af189")]
 [assembly: System.Reflection.AssemblyProductAttribute("RazorPages.Modelos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RazorPages.Modelos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
