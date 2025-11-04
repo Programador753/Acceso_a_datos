@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //builder.Services.AddSingleton<IAlumnoRepositorio, AlumnoRepositorioDB>();
 builder.Services.AddTransient<IAlumnoRepositorio, AlumnoRepositorioDB>();
+builder.Services.AddTransient<AsignaturaRepositorio>();
 
 IConfiguration configuration = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json")

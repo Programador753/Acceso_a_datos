@@ -1,0 +1,18 @@
+﻿@page
+@model RazorPages25.Pages.Asignaturas.IndexModel
+@{
+}
+
+<div class="card-group">
+    @foreach (var asignatura in Model.Asignaturas)
+    {
+        <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title>">@asignatura.CodAsignatura .- @asignatura.nomAsignatura</h5>
+                <p class="card-text">Código: @asignatura.horas</p>
+            </div>
+        </div>
+
+
+    }
+</div>

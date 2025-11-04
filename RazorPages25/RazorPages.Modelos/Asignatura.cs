@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RazorPages.Modelos
 {
-    internal class Asignatura
+    public class Asignatura
     {
         public int Id { get; set; }
         public string nomAsignatura { get; set; }

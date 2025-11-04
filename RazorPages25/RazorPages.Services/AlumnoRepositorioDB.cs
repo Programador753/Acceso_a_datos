@@ -46,6 +46,10 @@ namespace RazorPages.Services
             return Context.Alumnos.FromSqlRaw("Select * from Alumnos").ToList();
         }
 
+        public Asignatura GetAsignatura(int ID)
+        {
+            return Context.Asignaturas.Find(ID);
+        }
         public Alumno GetAlumno(int id)
         {
             //return Context.Alumnos.Find(id);
