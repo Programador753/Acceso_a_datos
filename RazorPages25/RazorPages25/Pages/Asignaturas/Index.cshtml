@@ -11,7 +11,13 @@
                 <h5 class="card-title>">@asignatura.CodAsignatura .- @asignatura.nomAsignatura</h5>
                 <p class="card-text">Código: @asignatura.horas</p>
             </div>
+            <div class="card-footer text-center">
+                <a asp-page="/Asignatura/Details" asp-route-ID="@asignatura.Id" class="btn btn-primary m-1">View</a>
+                <a asp-page="/Asignatura/Edit" asp-route-ID="@asignatura.Id" class="btn btn-primary m-1">Edit</a>
+                <a asp-page="/Asignatura/Delete" asp-route-ID="@asignatura.Id" class="btn btn-danger m-1">Delete</a>
+            </div>
         </div>
+
 
 
     }
