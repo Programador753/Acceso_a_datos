@@ -8,11 +8,11 @@
 
 @foreach (var curso in Model.Cursos)
 {
-    <section class="curso">
-        <h3>Curso: @curso</h3>
+    <table class="curso">
+        <h3>Curso: @curso </h3>
         <h4>Alumnos:</h4>
         @await Component.InvokeAsync("AlumnosDeUnCurso", new {curso = curso})
-    </section>
-
+        @await Component.InvokeAsync("AsignaturasDeUnCurso", new { curso = curso })
+    </table>
     <hr/>
 }

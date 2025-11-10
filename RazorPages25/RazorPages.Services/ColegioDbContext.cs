@@ -16,5 +16,6 @@ namespace RazorPages.Services
         }
         public DbSet<Alumno> Alumnos {get; set;}
         public DbSet<Asignatura> Asignaturas { get; set; }
+        public DbSet<Profesor> Profesores { get; set; }
     }    
 }

@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\shared\\components\\asignaturasdeuncurso\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\shared\\components\\asignaturasdeuncurso\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\components\\alumnoscursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\components\\alumnoscursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages.services\\alumnorepositoriodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|solutionrelative:razorpages.services\\alumnorepositoriodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages.services\\alumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|solutionrelative:razorpages.services\\alumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\components\\alumnosdeuncursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\components\\alumnosdeuncursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\shared\\components\\alumnosdeuncurso\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\shared\\components\\alumnosdeuncurso\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\components\\asignaturasdeuncursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\components\\asignaturasdeuncursoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages25\\pages\\cursos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECB0542-5C88-4EBF-972F-A2D9903573CB}|RazorPages25\\RazorPages25.csproj|solutionrelative:razorpages25\\pages\\cursos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\razorpages25\\razorpages.services\\asignaturarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5876A4-B09C-4FD0-B804-14E498E04027}|RazorPages.Services\\RazorPages.Services.csproj|solutionrelative:razorpages.services\\asignaturarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +42,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\Components\\AsignaturasDeUnCurso\\Default.cshtml",
+              "RelativeDocumentMoniker": "RazorPages25\\Pages\\Shared\\Components\\AsignaturasDeUnCurso\\Default.cshtml",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\Components\\AsignaturasDeUnCurso\\Default.cshtml",
+              "RelativeToolTip": "RazorPages25\\Pages\\Shared\\Components\\AsignaturasDeUnCurso\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T12:48:56.258Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "AsignaturaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AsignaturaRepositorio.cs",
+              "RelativeDocumentMoniker": "RazorPages.Services\\AsignaturaRepositorio.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AsignaturaRepositorio.cs",
+              "RelativeToolTip": "RazorPages.Services\\AsignaturaRepositorio.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA4wBYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:49:21.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AsignaturasDeUnCursoViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Components\\AsignaturasDeUnCursoViewComponent.cs",
+              "RelativeDocumentMoniker": "RazorPages25\\Components\\AsignaturasDeUnCursoViewComponent.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Components\\AsignaturasDeUnCursoViewComponent.cs",
+              "RelativeToolTip": "RazorPages25\\Components\\AsignaturasDeUnCursoViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:46:40.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AlumnosDeUnCursoViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Components\\AlumnosDeUnCursoViewComponent.cs",
               "RelativeDocumentMoniker": "RazorPages25\\Components\\AlumnosDeUnCursoViewComponent.cs",
@@ -50,70 +98,60 @@
               "RelativeToolTip": "RazorPages25\\Components\\AlumnosDeUnCursoViewComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:29:44.17Z",
+              "WhenOpened": "2025-11-10T12:45:32.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlumnoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AlumnoRepositorio.cs",
+              "RelativeDocumentMoniker": "RazorPages.Services\\AlumnoRepositorio.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AlumnoRepositorio.cs",
+              "RelativeToolTip": "RazorPages.Services\\AlumnoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:45:20.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\Components\\AlumnosDeUnCurso\\Default.cshtml",
-              "RelativeDocumentMoniker": "RazorPages25\\Pages\\Shared\\Components\\AlumnosDeUnCurso\\Default.cshtml",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\Components\\AlumnosDeUnCurso\\Default.cshtml",
-              "RelativeToolTip": "RazorPages25\\Pages\\Shared\\Components\\AlumnosDeUnCurso\\Default.cshtml",
+              "Title": "AlumnoRepositorioDB.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AlumnoRepositorioDB.cs",
+              "RelativeDocumentMoniker": "RazorPages.Services\\AlumnoRepositorioDB.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\AlumnoRepositorioDB.cs",
+              "RelativeToolTip": "RazorPages.Services\\AlumnoRepositorioDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-07T08:28:04.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "RazorPages25\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "RazorPages25\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-07T08:24:09.683Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:45:19.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "RazorPages25\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Index.cshtml",
-              "RelativeToolTip": "RazorPages25\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-07T08:24:01.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Cursos\\Index.cshtml",
               "RelativeDocumentMoniker": "RazorPages25\\Pages\\Cursos\\Index.cshtml",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Cursos\\Index.cshtml",
               "RelativeToolTip": "RazorPages25\\Pages\\Cursos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-07T08:17:54.214Z"
+              "WhenOpened": "2025-11-07T08:17:54.214Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Cursos\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "RazorPages25\\Pages\\Cursos\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Pages\\Cursos\\Index.cshtml.cs",
-              "RelativeToolTip": "RazorPages25\\Pages\\Cursos\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABRAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AlumnosCursoViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Components\\AlumnosCursoViewComponent.cs",
+              "RelativeDocumentMoniker": "RazorPages25\\Components\\AlumnosCursoViewComponent.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\Components\\AlumnosCursoViewComponent.cs",
+              "RelativeToolTip": "RazorPages25\\Components\\AlumnosCursoViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:14:16.702Z"
+              "WhenOpened": "2025-11-10T12:53:16.075Z",
+              "EditorCaption": ""
             }
           ]
         }

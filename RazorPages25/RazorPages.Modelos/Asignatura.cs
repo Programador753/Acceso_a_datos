@@ -12,6 +12,9 @@ namespace RazorPages.Modelos
         public string nomAsignatura { get; set; }
         public int horas { get; set; }
         public string CodAsignatura { get; set; }
+        public Curso cursoId { get; set; }
+        public int profeID { get; set; }
+
 
     }
 }

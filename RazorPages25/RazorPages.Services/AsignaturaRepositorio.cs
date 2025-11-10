@@ -19,5 +19,20 @@ namespace RazorPages.Services
         {
             return Context.Asignaturas;
         }
+
+        public IEnumerable<Asignatura> GetAsignaturasCurso(string nombre)
+        {
+            if (string.IsNullOrEmpty(nombre))
+            {
+                return Context.Asignaturas;
+            }
+            return Context.Asignaturas.Where(a => a.nomAsignatura.Contains(nombre));
+        }
+
+        public IEnumerable<Asignatura> GetAsignaturasCurso(Curso codigo)
+        {
+            return Context.Asignaturas.Where(a => a.cursoId == codigo);
+        }
+
     }
 }
