@@ -1,0 +1,23 @@
+﻿@model IEnumerable<RazorPages.Modelos.Alumno>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var alumno in Model)
+        {
+            <tr>
+                <td>@alumno.Nombre</td>
+                <td>@alumno.Email</td>
+                <td>
+                    <img src="~/images/@alumno.Foto" width="50"/>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -9,11 +9,11 @@ using Microsoft.Data.SqlClient;
 
 namespace RazorPages.Services
 {
-    public class AlumnoRepositorioDB : IAlumnoRepositorio
+    public class AlumnoRepositorioDB : IAlumnoRepositorio // Implementación de IAlumnoRepositorio usando Entity Framework Core 
     {
 
-        public ColegioDbContext Context { get; }
-        public AlumnoRepositorioDB(ColegioDbContext context)
+        public ColegioDbContext Context { get; } // Propiedad Context de tipo ColegioDbContext
+        public AlumnoRepositorioDB(ColegioDbContext context) // Constructor que recibe un ColegioDbContext
         {
             Context = context;
         }
@@ -67,15 +67,15 @@ namespace RazorPages.Services
 
         public IEnumerable<CursoCuantos> AlumnoPorCurso(Curso? curso)
         {
-            IEnumerable<Alumno> consulta = Context.Alumnos;
-            if (curso.HasValue)
+            IEnumerable<Alumno> consulta = Context.Alumnos; // Obtener todos los alumnos
+            if (curso.HasValue) // Verificar si se proporciona un curso
             {
-                consulta = consulta.Where(a => a.CursoID == curso);
+                consulta = consulta.Where(a => a.CursoID == curso); // Filtrar por curso si se proporciona uno
             }
-            return consulta.GroupBy(a => a.CursoID).Select(g => new CursoCuantos()
+            return consulta.GroupBy(a => a.CursoID).Select(g => new CursoCuantos() // Proyección a CursoCuantos
             {
-                Clase = g.Key.Value,
-                NumAlumnos = g.Count()
+                Clase = g.Key.Value, // Accedemos al valor del enum Curso 
+                NumAlumnos = g.Count() // Contamos el número de alumnos en cada grupo
             });
         }
 
@@ -86,6 +86,11 @@ namespace RazorPages.Services
                 return Context.Alumnos;
             }
             return Context.Alumnos.Where(a => a.Nombre.Contains(elementoABuscar) || a.Email.Contains(elementoABuscar));
+        }
+
+        public IEnumerable<Alumno> GetAlumnosCurso(Curso codigo) // Obtener alumnos por curso desde el repositorio 
+        {
+            return Context.Alumnos.Where(a => a.CursoID == codigo); // Funcion de LINQ para filtrar los alumnos por curso
         }
     }
 }

@@ -1,0 +1,18 @@
+﻿@page
+@model RazorPages25.Pages.Cursos.IndexModel
+@{
+    ViewData["Title"] = "Cursos";
+}
+
+<h1 align="center">CURSOS</h1>
+
+@foreach (var curso in Model.Cursos)
+{
+    <section class="curso">
+        <h3>Curso: @curso</h3>
+        <h4>Alumnos:</h4>
+        @await Component.InvokeAsync("AlumnosDeUnCurso", new {curso = curso})
+    </section>
+
+    <hr/>
+}
