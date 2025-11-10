@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,8 @@ namespace RazorPages.Modelos
         public Curso cursoId { get; set; }
         public int profeID { get; set; }
 
+        [ForeignKey("profeID")] 
+        public Profesor Profesor { get; set; }
 
     }
 }

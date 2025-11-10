@@ -16,5 +16,7 @@ namespace RazorPages25.Components
             var resultado = AsignaturaRepositorio.GetAsignaturasCurso(curso);
             return View(resultado);
         }
+
+        
     }
 }

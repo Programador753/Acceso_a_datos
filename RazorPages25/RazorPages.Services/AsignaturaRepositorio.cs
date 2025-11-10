@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using RazorPages.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RazorPages.Modelos;
 
 namespace RazorPages.Services
 {
@@ -33,6 +34,6 @@ namespace RazorPages.Services
         {
             return Context.Asignaturas.Where(a => a.cursoId == codigo);
         }
-
+        
     }
 }
