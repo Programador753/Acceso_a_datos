@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPages.Modelos;
 using RazorPages.Services;
@@ -7,15 +6,20 @@ namespace RazorPages25.Pages.Asignaturas
 {
     public class IndexModel : PageModel
     {
-        public AsignaturaRepositorio AsignaturaRepositorio { get; }
+        private readonly AsignaturaRepositorio _asignaturaRepositorio;
+
         public List<Asignatura> Asignaturas { get; set; }
+        public string ElementoABuscar { get; set; }
+
         public IndexModel(AsignaturaRepositorio asignaturaRepositorio)
         {
-            AsignaturaRepositorio = asignaturaRepositorio;
+            _asignaturaRepositorio = asignaturaRepositorio;
         }
-        public void OnGet()
+
+        public void OnGet(string elementoABuscar = "")
         {
-            Asignaturas = AsignaturaRepositorio.GetAllAsignaturas().ToList();
+            ElementoABuscar = elementoABuscar;
+            Asignaturas = _asignaturaRepositorio.GetAsignaturasCurso(elementoABuscar).ToList();
         }
     }
 }

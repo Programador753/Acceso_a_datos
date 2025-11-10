@@ -1,0 +1,19 @@
+﻿@model IEnumerable<RazorPages.Modelos.Profesor>
+
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Profesores</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var profesor in Model)
+    {
+        <tr>
+            <td>@profesor.NomProfesor</td>
+        </tr>
+    }
+
+    </tbody>
+
+</table>

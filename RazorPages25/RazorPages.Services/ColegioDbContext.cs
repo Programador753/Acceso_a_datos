@@ -17,5 +17,16 @@ namespace RazorPages.Services
         public DbSet<Alumno> Alumnos {get; set;}
         public DbSet<Asignatura> Asignaturas { get; set; }
         public DbSet<Profesor> Profesores { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configurar la relación entre Asignatura y Profesor
+            modelBuilder.Entity<Asignatura>()
+                .HasOne(a => a.Profesor)
+                .WithMany()
+                .HasForeignKey(a => a.profeID);
+        }
     }    
 }
