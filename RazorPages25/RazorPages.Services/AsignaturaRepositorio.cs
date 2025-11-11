@@ -34,6 +34,12 @@ namespace RazorPages.Services
         {
             return Context.Asignaturas.Where(a => a.cursoId == codigo);
         }
-        
+
+        public IEnumerable<Asignatura> GetAsignaturasPorProfesor(int profesorId)
+        {
+            return Context.Asignaturas
+                .Where(a => a.profeID == profesorId)
+                .Include(a => a.Profesor);
+        }
     }
 }

@@ -24,7 +24,6 @@
     @foreach (var curso in Model.Cursos)
     {
         <h3>Curso: @curso </h3>
-        <h4>Alumnos:</h4>
         <div style="display: flex; gap: 20px;">
             <div style="flex: 1;">
                 @await Component.InvokeAsync("AlumnosDeUnCurso", new { curso = curso })
