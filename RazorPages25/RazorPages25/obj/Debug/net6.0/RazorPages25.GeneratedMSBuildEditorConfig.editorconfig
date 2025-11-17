@@ -9,81 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPages25
 build_property.RootNamespace = RazorPages25
-build_property.ProjectDir = c:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\
+build_property.ProjectDir = C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25
+build_property.MSBuildProjectDirectory = C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\RazorPages25\RazorPages25
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Delete.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Details.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Edit.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Index.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Alumnos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Asignaturas/Index.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Asignaturas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpZ25hdHVyYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Cursos/Index.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Calificaciones/insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsaWZpY2FjaW9uZXNcaW5zZXJ0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Cursos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3Vyc29zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Error.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Index.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Privacy.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AlumnosCurso/Default.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AlumnosCurso/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcQWx1bW5vc0N1cnNvXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AlumnosDeUnCurso/Default.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AlumnosDeUnCurso/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcQWx1bW5vc0RlVW5DdXJzb1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AsignaturasDeUnCurso/Default.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/AsignaturasDeUnCurso/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcQXNpZ25hdHVyYXNEZVVuQ3Vyc29cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/ProfesoresDeUnCurso/Default.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/Components/ProfesoresDeUnCurso/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcUHJvZmVzb3Jlc0RlVW5DdXJzb1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/_ViewImports.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/_ViewStart.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/_Layout.cshtml]
+[C:/Users/anton/Desktop/2ºGS/ACCESO_A_DATOS/Acceso_a_datos/RazorPages25/RazorPages25/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hwe1zp4a3r

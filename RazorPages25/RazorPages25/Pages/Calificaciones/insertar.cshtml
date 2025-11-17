@@ -1,0 +1,50 @@
+﻿@page
+@model RazorPages25.Pages.Calificaciones.insertarModel
+@{
+    ViewData["Title"] = "Insertar Calificación";
+
+}
+<h2>Insertar Calificación</h2>
+<form method="get">
+    <div>
+        <label for="Convocatoria">Convocatoria:</label>
+        <select id="Convocatoria" name="Convocatoria" class="form-select">
+            @foreach (var convocatoria in Model.Convocatoria)
+                        {
+                <option value="@convocatoria">@convocatoria</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="Curso">Curso:</label>
+        <select asp-for="curso" class="form-select" onchange="submit()">
+            <option value="">-- Seleccione un curso --</option>
+            @foreach (var curso in Model.Cursos)
+                        {
+                <option value="@curso">@curso</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="Alumno">Alumno:</label>
+        <select asp-for="alumnos" class="form-select">
+            <option value="">-- Seleccione un alumno --</option>
+            @foreach (var alumno in Model.alumnos)
+                        {
+                <option value="@alumno">@alumno.Nombre </option>
+            }
+        </select>
+    </div>
+    <div>
+        <!--Desplegable de asignaturas del curso seleccionado -->
+        <label for="Asignatura">Asignatura:</label>
+        <select asp-for="asignatura" class="form-select">
+            <option value="">-- Seleccione una asignatura --</option>
+            @foreach (var asignatura in Model.asignaturas)
+                        {
+                <option value="@asignatura.CodAsignatura">@asignatura.CodAsignatura - @asignatura.nomAsignatura</option>
+            }
+        </select>
+    </div>
+
+</form>
