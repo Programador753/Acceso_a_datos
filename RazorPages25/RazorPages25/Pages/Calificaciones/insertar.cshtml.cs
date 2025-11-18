@@ -17,19 +17,22 @@ namespace RazorPages25.Pages.Calificaciones
         public List<Asignatura> asignaturas { get; set; }
         [BindProperty]
         public int asignatura { get; set; }
-        public insertarModel(AsignaturaRepositorio asignaturaRepositorio)
+        public insertarModel(AsignaturaRepositorio asignaturaRepositorio, IAlumnoRepositorio alumnoRepositorio)
         {
             AsignaturaRepositorio = asignaturaRepositorio;
+            AlumnoRepositorio = alumnoRepositorio;
         }
+        public IAlumnoRepositorio AlumnoRepositorio { get; private set; }
+
         public List<Alumno> alumnos { get; set; }
-        public AlumnoRepositorioDB AlumnoRepositorioDB { get; private set; }
         public void OnGet()
         {
             // Obtener todos los valores del enum Convocatoria y Curso
             Convocatoria = Enum.GetValues(typeof(Convocatoria)).Cast<Convocatoria>().ToList();
             Cursos = Enum.GetValues(typeof(Curso)).Cast<Curso>().ToList();
             asignaturas = AsignaturaRepositorio.GetAsignaturasCurso(curso).ToList();
-            alumnos = AlumnoRepositorioDB.GetAlumnosCurso(curso).ToList();
+            // Corregido: Usar GetAlumnosCurso para obtener List<Alumno>
+            alumnos = AlumnoRepositorio.GetAlumnosCurso(curso).ToList();
         }
     }
 }
