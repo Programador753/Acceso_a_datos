@@ -38,7 +38,7 @@
     </div>
     <div>
         <label for="Alumno">Alumno:</label>
-        <select asp-for="alumnos" class="form-select">
+        <select asp-for="alumnoSeleccionado" class="form-select">
             <option value="">-- Seleccione un alumno --</option>
             @foreach (var alumno in Model.alumnos)
             {
