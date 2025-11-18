@@ -26,16 +26,6 @@
         </select>
     </div>
     <div>
-        <label for="Alumno">Alumno:</label>
-        <select asp-for="alumnos" class="form-select">
-            <option value="">-- Seleccione un alumno --</option>
-            @foreach (var alumno in Model.alumnos)
-                        {
-                <option value="@alumno">@alumno.Nombre</option>
-            }
-        </select>
-    </div>
-    <div>
         <!--Desplegable de asignaturas del curso seleccionado -->
         <label for="Asignatura">Asignatura:</label>
         <select asp-for="asignatura" class="form-select">
@@ -46,5 +36,14 @@
             }
         </select>
     </div>
-
+    <div>
+        <label for="Alumno">Alumno:</label>
+        <select asp-for="alumnos" class="form-select">
+            <option value="">-- Seleccione un alumno --</option>
+            @foreach (var alumno in Model.alumnos)
+            {
+                <option value="@alumno.Id">@alumno.Nombre</option>
+            }
+        </select>
+    </div>
 </form>
