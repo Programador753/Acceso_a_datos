@@ -17,6 +17,7 @@ namespace RazorPages.Services
         public DbSet<Alumno> Alumnos {get; set;}
         public DbSet<Asignatura> Asignaturas { get; set; }
         public DbSet<Profesor> Profesores { get; set; }
+        public DbSet<Calificacion> Calificaciones { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

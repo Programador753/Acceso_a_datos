@@ -8,8 +8,9 @@
 <form method="get">
     <div>
         <label for="Convocatoria">Convocatoria:</label>
-        <select id="Convocatoria" name="Convocatoria" class="form-select">
-            @foreach (var convocatoria in Model.Convocatoria)
+        <select asp-for="calificacion.convocatoria" class="form-select" onchange="submit()">
+            <option value="">-- Seleccione una convocatoria --</option>
+            @foreach (var convocatoria in Model.convocatoria)
                         {
                 <option value="@convocatoria">@convocatoria</option>
             }
@@ -28,7 +29,7 @@
     <div>
         <!--Desplegable de asignaturas del curso seleccionado -->
         <label for="Asignatura">Asignatura:</label>
-        <select asp-for="asignatura" class="form-select">
+        <select asp-for="calificacion.asignaturaID" class="form-select" onchange="submit()">
             <option value="">-- Seleccione una asignatura --</option>
             @foreach (var asignatura in Model.asignaturas)
                         {
@@ -38,7 +39,7 @@
     </div>
     <div>
         <label for="Alumno">Alumno:</label>
-        <select asp-for="alumnoSeleccionado" class="form-select">
+        <select asp-for="calificacion.alumnoID" class="form-select" onchange="submit()">
             <option value="">-- Seleccione un alumno --</option>
             @foreach (var alumno in Model.alumnos)
             {
@@ -46,4 +47,9 @@
             }
         </select>
     </div>
+    <div>
+        <label for="Nota">Nota:</label>
+        <input asp-for="calificacion.nota" class="form-control" size="2" max="10" min="1"/>
+    </div>
+    
 </form>

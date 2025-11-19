@@ -1,41 +1,88 @@
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.IdentityModel.Tokens;
 using RazorPages.Modelos;
 using RazorPages.Services;
 
 namespace RazorPages25.Pages.Calificaciones
 {
+    /// <summary>
+    /// Modelo de página para insertar calificaciones de alumnos
+    /// </summary>
     public class insertarModel : PageModel
-    { 
-        public List<Convocatoria> Convocatoria { get; set; }
+    {
+        #region Propiedades y Dependencias
+
+        // Repositorio para acceder a las asignaturas
+        public AsignaturaRepositorio AsignaturaRepositorio { get; private set; }
+
+        // Repositorio para acceder a los alumnos
+        public IAlumnoRepositorio AlumnoRepositorio { get; }
+
+        #endregion
+
+        #region Propiedades de Datos de la Página
+
+        // Lista de convocatorias disponibles (EV1, EV2, EV3, CV1, CV2, CV3, CV4)
+        public List<Convocatoria> convocatoria { get; set; }
+
+        // Lista de cursos disponibles (E1, E2, H1, H2)
         public List<Curso> Cursos { get; set; }
+
+        // Lista de asignaturas filtradas por el curso seleccionado
+        public List<Asignatura> asignaturas { get; set; }
+
+        // Lista de alumnos filtrados por el curso seleccionado
+        public List<Alumno> alumnos { get; set; }
+
+        #endregion
+
+        #region Propiedades Enlazadas (BindProperty)
+
+        // Curso seleccionado desde la URL o formulario
         [BindProperty(SupportsGet = true)]
         public Curso curso { get; set; }
-        public AsignaturaRepositorio AsignaturaRepositorio { get; private set; }
-        public List<Asignatura> asignaturas { get; set; }
-        [BindProperty]
-        public int asignatura { get; set; }
 
+        // Objeto calificación que se creará/modificará
         [BindProperty(SupportsGet = true)]
-        public int alumnoSeleccionado { get; set; }
+        public Calificacion calificacion { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Constructor con inyección de dependencias
+        /// </summary>
+        /// <param name="asignaturaRepositorio">Repositorio de asignaturas</param>
+        /// <param name="alumnoRepositorio">Repositorio de alumnos</param>
         public insertarModel(AsignaturaRepositorio asignaturaRepositorio, IAlumnoRepositorio alumnoRepositorio)
         {
             AsignaturaRepositorio = asignaturaRepositorio;
             AlumnoRepositorio = alumnoRepositorio;
         }
-        public IAlumnoRepositorio AlumnoRepositorio { get; private set; }
 
-        public List<Alumno> alumnos { get; set; }
+        #endregion
+
+        #region Métodos de Página
+
+        /// <summary>
+        /// Manejador GET: carga los datos iniciales para el formulario de inserción
+        /// </summary>
         public void OnGet()
         {
-            // Obtener todos los valores del enum Convocatoria y Curso
-            Convocatoria = Enum.GetValues(typeof(Convocatoria)).Cast<Convocatoria>().ToList();
+            // Cargar todas las convocatorias disponibles desde el enum
+            convocatoria = Enum.GetValues(typeof(Convocatoria)).Cast<Convocatoria>().ToList();
+
+            // Cargar todos los cursos disponibles desde el enum
             Cursos = Enum.GetValues(typeof(Curso)).Cast<Curso>().ToList();
+
+            // Filtrar asignaturas según el curso seleccionado
             asignaturas = AsignaturaRepositorio.GetAsignaturasCurso(curso).ToList();
-            // Corregido: Usar GetAlumnosCurso para obtener List<Alumno>
+
+            // Filtrar alumnos según el curso seleccionado
             alumnos = AlumnoRepositorio.GetAlumnosCurso(curso).ToList();
         }
+
+        #endregion
     }
 }

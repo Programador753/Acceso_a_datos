@@ -9,6 +9,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddTransient<IAlumnoRepositorio, AlumnoRepositorioDB>();
 builder.Services.AddTransient<AsignaturaRepositorio>();
 builder.Services.AddTransient<ProfesorRepositorio>();
+builder.Services.AddTransient<CalificacionRepositorio>();
 
 
 IConfiguration configuration = new ConfigurationBuilder()
