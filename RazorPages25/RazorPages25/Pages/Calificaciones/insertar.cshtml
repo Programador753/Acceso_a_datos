@@ -1,104 +1,130 @@
 ﻿@page
-@model RazorPages25.Pages.Calificaciones.insertarModel
+@model RazorPages25.Pages.Calificaciones.InsertarModel
 @{
-    ViewData["Title"] = "Insertar Calificación";
 }
 
-<h2>Insertar Calificación</h2>
+<style>
+    .contenedor {
+        width: 600px;
+        margin: 20px auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-@if (TempData["mensaje"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["mensaje"]
-    </div>
-}
+    .fila {
+        margin-bottom: 12px;
+    }
 
-<form method="get">
-    <div>
-        <label for="Convocatoria">Convocatoria:</label>
-        <select asp-for="calificacion.convocatoria" class="form-select" onchange="submit()">
-            <option value="">-- Seleccione una convocatoria --</option>
-            @foreach (var convocatoria in Model.convocatoria)
-            {
-                <option value="@convocatoria">@convocatoria</option>
-            }
-        </select>
-    </div>
-    <div>
-        <label for="Curso">Curso:</label>
-        <select asp-for="curso" class="form-select" onchange="submit()">
-            <option value="">-- Seleccione un curso --</option>
-            @foreach (var curso in Model.Cursos)
-            {
-                <option value="@curso">@curso</option>
-            }
-        </select>
-    </div>
-    <div>
-        <!--Desplegable de asignaturas del curso seleccionado -->
-        <label for="Asignatura">Asignatura:</label>
-        <select asp-for="calificacion.asignaturaID" class="form-select" onchange="submit()">
-            <option value="">-- Seleccione una asignatura --</option>
-            @foreach (var asignatura in Model.asignaturas)
-            {
-                <option value="@asignatura.CodAsignatura">@asignatura.CodAsignatura - @asignatura.nomAsignatura</option>
-            }
-        </select>
-    </div>
-    <div>
-        <label for="Alumno">Alumno:</label>
-        <select asp-for="calificacion.alumnoID" class="form-select" onchange="submit()">
-            <option value="">-- Seleccione un alumno --</option>
-            @foreach (var alumno in Model.alumnos)
-            {
-                <option value="@alumno.Id">@alumno.Nombre</option>
-            }
-        </select>
-    </div>
-</form>
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
 
-<form method="post">
-    <input asp-for="calificacion.convocatoria" type="hidden" />
-    <input asp-for="curso" type="hidden" />
-    <input asp-for="calificacion.asignaturaID" type="hidden" />
-    <input asp-for="calificacion.alumnoID" type="hidden" />
-    <div>
-        <label asp-for="calificacion.nota">Nota:</label>
-        <input asp-for="calificacion.nota" class="form-control" size="2" max="10" min="1" />
-        <span asp-validation-for="calificacion.nota" class="text-danger"></span>
-    </div>
-    <div>
-        <button type="submit" class="btn btn-primary">Guardar Calificación</button>
-    </div>
-</form>
+    select, input[type="number"], input[type="text"] {
+        padding: 6px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #888;
+    }
 
-<div class="mt-4">
+    button {
+        padding: 10px 20px;
+        background-color: #006600;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #004d00;
+    }
+</style>
+<div class="contenedor">
+    <form method="get">
+        <div class="fila">
+            <label asp-for="calificacion.convocatoria">Convocatoria</label>
+            <select asp-for="calificacion.convocatoria" onchange="submit()">
+                <option value="">Selecciona convocatoria </option>
+                @foreach (var convocatoria in @Model.convocatorias)
+                {
+                    <option value="@convocatoria" label="@convocatoria"></option>
+                }
+            </select>
+            </div>
+                <div class="fila">
+                    <label asp-for="curso">Curso</label>
+                    <select asp-for="curso" onchange="submit()">
+                        <option value="">Selecciona un curso </option>
+                        @foreach (var curso in @Model.Cursos)
+                        {
+                            <option value="@curso" label="@curso"></option>
+                        }
+                    </select>
+                    </div>
+                        <div class="fila">
+                            <label asp-for="asignaturaID">Asignatura</label>
+                            <select asp-for="asignaturaID" onchange="submit()">
+                                <option value="">Selecciona una asignatura </option>
+                                @foreach (var asignatura in @Model.asignaturas)
+                                {
+                                    <option value="@asignatura.Id" label="@asignatura.CodAsignatura - @asignatura.nomAsignatura"></option>
+                                }
+                            </select>
+                        </div>
+                        <div class="fila">
+                            <label asp-for="calificacion.alumnoID">Alumno</label>
+                            <select asp-for="calificacion.alumnoID" onchange="submit()">
+                                <option value="">Selecciona un alumno</option>
+                                @foreach (var alumno in @Model.alumnos)
+                                {
+                                    <option value="@alumno.Id" label="@alumno.Nombre"></option>
+                                }
+                            </select>
+                        </div>
+
+    </form>
+
+    <form method="post">
+        <input asp-for="calificacion.convocatoria" type="hidden" />
+        <input asp-for="curso" type="hidden" />
+        <input asp-for="calificacion.asignaturaID" type="hidden" />
+        <input asp-for="calificacion.alumnoID" type="hidden" />
+        <div class="fila">
+            <label asp-for="calificacion.nota">Calificación : </label>
+            <input asp-for="calificacion.nota" size="2" max="10" min="1" />
+        </div>
+        <button type="submit">Insertar</button>
+    </form>
+
     @if (Model.CalificacionesMostradas != null && Model.CalificacionesMostradas.Any())
     {
-        <h3>Calificaciones Insertadas</h3>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Alumno</th>
-                    <th>Nota</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var calificacion in Model.CalificacionesMostradas)
-                {
-                    var alum = Model.alumnos?.FirstOrDefault(a => a.Id == calificacion.alumnoID);
+        <div class="calificaciones-listado">
+            <h3>Calificaciones existentes</h3>
+
+            <table>
+                <thead>
                     <tr>
-                        <td>@(alum?.Nombre ?? "Desconocido")</td>
-                        <td>@calificacion.nota</td>
+                        <th>Alumno</th>
+                        <th>Nota</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else if (Model.calificacion?.asignaturaID != 0 && Model.calificacion?.convocatoria != default(Convocatoria))
-    {
-        <div class="alert alert-info">
-            No hay calificaciones registradas para esta convocatoria y asignatura.
+                </thead>
+                <tbody>
+                    @foreach (var cal in Model.CalificacionesMostradas)
+                    {
+                        // Buscamos el alumno en la lista ya cargada
+                        var alum = Model.alumnos.FirstOrDefault(a => a.Id == cal.alumnoID);
+
+                        <tr>
+                            <td>@(alum?.Nombre ?? "Alumno no encontrado")</td>
+                            <td>@cal.nota</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         </div>
     }
+
 </div>
