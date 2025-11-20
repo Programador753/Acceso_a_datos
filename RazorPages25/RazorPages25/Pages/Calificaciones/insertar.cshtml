@@ -2,16 +2,24 @@
 @model RazorPages25.Pages.Calificaciones.insertarModel
 @{
     ViewData["Title"] = "Insertar Calificación";
-
 }
+
 <h2>Insertar Calificación</h2>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["mensaje"]
+    </div>
+}
+
 <form method="get">
     <div>
         <label for="Convocatoria">Convocatoria:</label>
         <select asp-for="calificacion.convocatoria" class="form-select" onchange="submit()">
             <option value="">-- Seleccione una convocatoria --</option>
             @foreach (var convocatoria in Model.convocatoria)
-                        {
+            {
                 <option value="@convocatoria">@convocatoria</option>
             }
         </select>
@@ -21,7 +29,7 @@
         <select asp-for="curso" class="form-select" onchange="submit()">
             <option value="">-- Seleccione un curso --</option>
             @foreach (var curso in Model.Cursos)
-                        {
+            {
                 <option value="@curso">@curso</option>
             }
         </select>
@@ -32,7 +40,7 @@
         <select asp-for="calificacion.asignaturaID" class="form-select" onchange="submit()">
             <option value="">-- Seleccione una asignatura --</option>
             @foreach (var asignatura in Model.asignaturas)
-                        {
+            {
                 <option value="@asignatura.CodAsignatura">@asignatura.CodAsignatura - @asignatura.nomAsignatura</option>
             }
         </select>
@@ -47,9 +55,50 @@
             }
         </select>
     </div>
-    <div>
-        <label for="Nota">Nota:</label>
-        <input asp-for="calificacion.nota" class="form-control" size="2" max="10" min="1"/>
-    </div>
-    
 </form>
+
+<form method="post">
+    <input asp-for="calificacion.convocatoria" type="hidden" />
+    <input asp-for="curso" type="hidden" />
+    <input asp-for="calificacion.asignaturaID" type="hidden" />
+    <input asp-for="calificacion.alumnoID" type="hidden" />
+    <div>
+        <label asp-for="calificacion.nota">Nota:</label>
+        <input asp-for="calificacion.nota" class="form-control" size="2" max="10" min="1" />
+        <span asp-validation-for="calificacion.nota" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Guardar Calificación</button>
+    </div>
+</form>
+
+<div class="mt-4">
+    @if (Model.CalificacionesMostradas != null && Model.CalificacionesMostradas.Any())
+    {
+        <h3>Calificaciones Insertadas</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var calificacion in Model.CalificacionesMostradas)
+                {
+                    var alum = Model.alumnos?.FirstOrDefault(a => a.Id == calificacion.alumnoID);
+                    <tr>
+                        <td>@(alum?.Nombre ?? "Desconocido")</td>
+                        <td>@calificacion.nota</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.calificacion?.asignaturaID != 0 && Model.calificacion?.convocatoria != default(Convocatoria))
+    {
+        <div class="alert alert-info">
+            No hay calificaciones registradas para esta convocatoria y asignatura.
+        </div>
+    }
+</div>
