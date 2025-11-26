@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HernadezCavero.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+438c8c2c28c347cc74a89a6aa7f0dbf9a53867b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2a6d95bc85eaef088617f06c3cbb349db59b060")]
 [assembly: System.Reflection.AssemblyProductAttribute("HernadezCavero.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HernadezCavero.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
