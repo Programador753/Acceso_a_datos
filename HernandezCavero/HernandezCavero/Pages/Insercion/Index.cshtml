@@ -1,0 +1,39 @@
+﻿@page
+@model HernandezCavero.Pages.Insercion.IndexModel
+@{
+    ViewData["Title"] = "Insertar Venta";
+}
+
+<h2 class="mb-4">Gestión de Ventas</h2>
+
+@if (!string.IsNullOrEmpty(Model.MensajeExito))
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Éxito!</strong> @Model.MensajeExito
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (!ModelState.IsValid && ModelState.ErrorCount > 0)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error:</strong> Por favor, corrija los siguientes errores:
+        <ul class="mb-0 mt-2">
+            @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-8">
+        @await Component.InvokeAsync("InsertarVenta", new { categoriaId = Model.CategoriaVentaId })
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

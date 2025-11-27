@@ -1,0 +1,13 @@
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\bin\Debug\net6.0\HernandezCavero.Modelos.deps.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\bin\Debug\net6.0\HernandezCavero.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\bin\Debug\net6.0\HernandezCavero.Modelos.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.csproj.AssemblyReference.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.AssemblyInfo.cs
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.sourcelink.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\refint\HernandezCavero.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\HernandezCavero.Modelos.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernandezCavero.Modelos\obj\Debug\net6.0\ref\HernandezCavero.Modelos.dll

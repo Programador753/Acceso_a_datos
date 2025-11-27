@@ -1,0 +1,132 @@
+﻿@model HernandezCavero.Components.InsertarVentaViewModel
+
+<div class="card">
+    <div class="card-header bg-success text-white">
+        <h5 class="mb-0">Insertar Nueva Venta</h5>
+    </div>
+    <div class="card-body">
+        <!-- Formulario GET para filtrar productos por categoría -->
+        <form method="get" class="mb-3">
+            <div class="mb-3">
+                <label for="categoriaSelect" class="form-label">
+                    Categoría <span class="text-danger">*</span>
+                </label>
+                <select id="categoriaSelect"
+                        name="CategoriaVentaId"
+                        class="form-select"
+                        required
+                        onchange="this.form.submit()">
+                    @foreach (var categoria in Model.Categorias)
+                    {
+                        <option value="@categoria.Value"
+                                selected="@(categoria.Value == Model.CategoriaId?.ToString())">
+                            @categoria.Text
+                        </option>
+                    }
+                </select>
+                <small class="form-text text-muted">
+                    Selecciona una categoría para ver los productos disponibles.
+                </small>
+            </div>
+        </form>
+
+        <!-- Formulario POST para insertar la venta -->
+        <form method="post" asp-page-handler="InsertarVenta" id="formVenta">
+            <input type="hidden" name="CategoriaVentaId" value="@Model.CategoriaId" />
+
+            <div class="mb-3">
+                <label for="productoSelect" class="form-label">
+                    Producto <span class="text-danger">*</span>
+                </label>
+                <select id="productoSelect"
+                        name="ProductoId"
+                        class="form-select"
+                        required
+                        @(!Model.CategoriaId.HasValue ? "disabled" : "")>
+                    @foreach (var producto in Model.Productos)
+                    {
+                        <option value="@producto.Value">@producto.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="ProductoId" class="text-danger"></span>
+                @if (!Model.CategoriaId.HasValue)
+                {
+                    <small class="form-text text-muted">
+                        Primero selecciona una categoría.
+                    </small>
+                }
+                else if (!Model.Productos.Any(p => p.Value != ""))
+                {
+                    <small class="form-text text-danger">
+                        No hay productos disponibles en esta categoría.
+                    </small>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label for="cantidadInput" class="form-label">
+                    Cantidad <span class="text-danger">*</span>
+                </label>
+                <input type="number"
+                       id="cantidadInput"
+                       name="Cantidad"
+                       class="form-control"
+                       min="1"
+                       value="1"
+                       required />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="clienteInput" class="form-label">
+                    Cliente <span class="text-danger">*</span>
+                </label>
+                <input type="text"
+                       id="clienteInput"
+                       name="Cliente"
+                       class="form-control"
+                       placeholder="Nombre del cliente"
+                       maxlength="100"
+                       required />
+                <span asp-validation-for="Cliente" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="fechaInput" class="form-label">
+                    Fecha de Venta <span class="text-danger">*</span>
+                </label>
+                <input type="date"
+                       id="fechaInput"
+                       name="FechaVenta"
+                       class="form-control"
+                       value="@Model.FechaVenta.ToString("yyyy-MM-dd")"
+                       required />
+                <span asp-validation-for="FechaVenta" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit"
+                        class="btn btn-success"
+                        @(!Model.CategoriaId.HasValue ? "disabled" : "")>
+                    <i class="bi bi-plus-circle"></i> Insertar Venta
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .form-label {
+        font-weight: 600;
+    }
+
+    .text-danger {
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0.25rem;
+    }
+</style>

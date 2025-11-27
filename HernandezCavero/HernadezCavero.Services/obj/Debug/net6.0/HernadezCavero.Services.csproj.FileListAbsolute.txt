@@ -1,0 +1,16 @@
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\bin\Debug\net6.0\HernadezCavero.Services.deps.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\bin\Debug\net6.0\HernadezCavero.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\bin\Debug\net6.0\HernadezCavero.Services.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\bin\Debug\net6.0\HernandezCavero.Modelos.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\bin\Debug\net6.0\HernandezCavero.Modelos.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.csproj.AssemblyReference.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.AssemblyInfo.cs
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.sourcelink.json
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\Hernadez.67C3E31F.Up2Date
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\refint\HernadezCavero.Services.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\HernadezCavero.Services.pdb
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\HernandezCavero\HernadezCavero.Services\obj\Debug\net6.0\ref\HernadezCavero.Services.dll

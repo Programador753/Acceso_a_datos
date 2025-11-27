@@ -1,0 +1,41 @@
+﻿@page
+@using HernandezCavero.Modelos
+@model HernandezCavero.Pages.Categorias.IndexModel
+@{
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="get" class="mb-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <label asp-for="CategoriaSeleccionada" class="form-label">Filtrar por categoría</label>
+                    <select asp-for="CategoriaSeleccionada" asp-items="Model.Categorias" class="form-select" onchange="this.form.submit()">
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        @if (Model.CategoriaSeleccionada.HasValue && Model.Productos.Any())
+        {
+            <h4 class="mb-3">Productos de la categoría seleccionada</h4>
+            @await Component.InvokeAsync("ProductosPorCategoria", new { categoria = Model.Productos.First().Categoria })
+        }
+        else if (Model.CategoriaSeleccionada.HasValue && !Model.Productos.Any())
+        {
+            <div class="alert alert-info">
+                <p>No hay productos en esta categoría.</p>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-secondary">
+                <p>Selecciona una categoría para ver sus productos.</p>
+            </div>
+        }
+    </div>
+
+    <div class="col-md-4">
+        @await Component.InvokeAsync("TotalesCategorias")
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<HernandezCavero.Components.TotalCategoriaViewModel>
+
+<div class="card">
+    <div class="card-header">
+        <h5>Total Ventas por Categoría</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Total Vendido</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var total in Model)
+            {
+                <tr>
+                    <td>@total.NombreCategoria</td>
+                    <td>@total.TotalVendido.ToString("C")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
