@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColegioAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b548a699eed0a63522d24ea1d2fb3d208f36bd34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da8f5d9eaaf5bdb35388b8fa323efe884543808b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColegioAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColegioAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

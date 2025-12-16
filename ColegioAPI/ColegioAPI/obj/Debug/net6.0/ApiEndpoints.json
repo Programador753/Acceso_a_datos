@@ -28,6 +28,32 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "alumno",
+        "Type": "ColegioAPI.Models.Alumno",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ColegioAPI.Models.Alumno",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ColegioAPI.Controllers.AlumnoController",
+    "Method": "Post",
+    "RelativePath": "api/Alumno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
         "Name": "value",
         "Type": "System.String",
         "IsRequired": true
@@ -108,10 +134,30 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColegioAPI.Controllers.AlumnoController",
+    "Method": "Get",
+    "RelativePath": "api/Alumno/busqueda/{busca}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "busca",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ColegioAPI.Models.Alumno, ColegioAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
