@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HernandezCavero.Modelos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e3448ad4516939f62e363fa51fefdf91e847686")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+589465e78fd0da6a38b1f17257207e2a37512aef")]
 [assembly: System.Reflection.AssemblyProductAttribute("HernandezCavero.Modelos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HernandezCavero.Modelos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
