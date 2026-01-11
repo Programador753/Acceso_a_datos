@@ -1,47 +1,36 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using MVC26.Models;
 
 namespace MVC26.Controllers
 {
-    public class SerieController : Controller
+    public class VehiculoController : Controller
     {
-        public Contexto Contexto { get; }
-        public SerieController(Contexto contexto)
-        {
-            Contexto = contexto;
-        }
-        // GET: SerieController
+        // GET: VehiculoController
         public ActionResult Index()
         {
-            return View(Contexto.Series.Include(s => s.Marca));
+            return View();
         }
 
-        // GET: SerieController/Details/5
+        // GET: VehiculoController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: SerieController/Create
+        // GET: VehiculoController/Create
         public ActionResult Create()
         {
-            ViewBag.MarcaID = new SelectList(Contexto.Marcas, "ID", "Nom_Marca");
             return View();
         }
 
-        // POST: SerieController/Create
+        // POST: VehiculoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SerieModelo serie)
+        public ActionResult Create(IFormCollection collection)
         {
             try
             {
-                Contexto.Series.Add(serie);
-                Contexto.SaveChanges();
-                return RedirectToAction(nameof(Create));
+                return RedirectToAction(nameof(Index));
             }
             catch
             {
@@ -49,13 +38,13 @@ namespace MVC26.Controllers
             }
         }
 
-        // GET: SerieController/Edit/5
+        // GET: VehiculoController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: SerieController/Edit/5
+        // POST: VehiculoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -70,13 +59,13 @@ namespace MVC26.Controllers
             }
         }
 
-        // GET: SerieController/Delete/5
+        // GET: VehiculoController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: SerieController/Delete/5
+        // POST: VehiculoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

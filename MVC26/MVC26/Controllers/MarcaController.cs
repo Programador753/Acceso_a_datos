@@ -15,7 +15,7 @@ namespace MVC26.Controllers
         // GET: MarcaController
         public ActionResult Index()
         {
-            return View();
+            return View(Contexto.Marcas);
         }
 
         // GET: MarcaController/Details/5
@@ -40,7 +40,7 @@ namespace MVC26.Controllers
                 Contexto.Marcas.Add(marca);
                 Contexto.Database.EnsureCreated();
                 Contexto.SaveChanges();
-                return RedirectToAction(nameof(Create));
+                return RedirectToAction(nameof(Index));
             }
             catch
             {
