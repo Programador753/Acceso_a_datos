@@ -7,5 +7,7 @@
         public string Email { get; set; }
         public string Foto { get; set; }
         public int CursoID { get; set; }
+        public string Sexo { get; set; }
+        public DateTime Fnac { get; set; }
     }
 }
