@@ -12,16 +12,7 @@
 
 <!-- Filtro con desplegable por matricula -->
 <form method="get">
-    <select id="busca" name="busca">
-        <option value="">-- Select Matricula --</option>
-        @if (ViewBag.Matriculas != null)
-        {
-            @foreach (var vehiculo in ViewBag.Matriculas as List<string>)
-            {
-                <option value="@vehiculo">@vehiculo</option>
-            }
-        }
-    </select>
+    <select id="busca" name="busca" class="form-control" asp-items="ViewBag.Matriculas"></select>
     <input type="submit" value="Buscar" />
 </form>
 
@@ -50,7 +41,7 @@
                 @Html.DisplayFor(modelItem => item.Color)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Serie.ID)
+                @Html.DisplayFor(modelItem => item.Serie.Nom_Serie)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

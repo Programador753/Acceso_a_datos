@@ -22,28 +22,17 @@ namespace MVC26.Controllers
         // GET: VehiculoController/Busqueda
         public ActionResult Busqueda(string busca = "")
         {
+            ViewBag.TextoBusqueda = busca;
             var lista = from v in Contexto.Vehiculos where (v.Matricula.Contains(busca)) select v;
             return View(lista.Include(v => v.Serie).ThenInclude(s => s.Marca));
         }
 
         // GET: VehiculoController/Busqueda2  
-        public IActionResult Busqueda2(string busca)
+        public IActionResult Busqueda2(string busca = "")
         {
-            // Obtener todas las matrículas únicas
-            ViewBag.Matriculas = _context.VehiculoModelo
-                .Select(v => v.Matricula)
-                .Distinct()
-                .OrderBy(m => m)
-                .ToList();
-
-            // Filtrar vehículos si hay búsqueda
-            var vehiculos = string.IsNullOrEmpty(busca)
-                ? _context.VehiculoModelo.Include(v => v.Serie).ToList()
-                : _context.VehiculoModelo.Include(v => v.Serie)
-                    .Where(v => v.Matricula == busca)
-                    .ToList();
-
-            return View(vehiculos);
+            ViewBag.Matriculas = new SelectList(Contexto.Vehiculos, "Matricula", "Matricula", busca);
+            var lista = (from v in Contexto.Vehiculos where ( v.Matricula == busca) select v);
+            return View(lista.Include(v => v.Serie).ThenInclude(s => s.Marca));
         }
 
         // GET: VehiculoController/Details/5

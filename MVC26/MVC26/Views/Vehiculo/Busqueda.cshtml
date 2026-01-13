@@ -10,12 +10,9 @@
     <a asp-action="Create">Create New</a>
 </p>
 <form method="get">
-    <input type="search" id="busca" name="busca" placeholder="Buscar por matricula" />
+    <input type="search" id="busca" name="busca" placeholder="Buscar por matricula" value="@ViewBag.TextoBusqueda" />
     <input type="submit" value="Buscar" />
 </form>
-
-
-
 
 <table class="table">
     <thead>
