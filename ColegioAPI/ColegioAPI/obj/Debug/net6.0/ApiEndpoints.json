@@ -47,28 +47,6 @@
   },
   {
     "ContainingType": "ColegioAPI.Controllers.AlumnoController",
-    "Method": "Post",
-    "RelativePath": "api/Alumno",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ColegioAPI.Controllers.AlumnoController",
     "Method": "Get",
     "RelativePath": "api/Alumno/{id}",
     "HttpMethod": "GET",

@@ -38,7 +38,8 @@ namespace MVC26.Controllers
         // GET: VehiculoController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            VehiculoModelo vehiculo = Contexto.Vehiculos.Include(v => v.Serie).ThenInclude(s => s.Marca).FirstOrDefault(v => v.ID == id);
+            return View(vehiculo);
         }
 
         // GET: VehiculoController/Create
@@ -89,7 +90,8 @@ namespace MVC26.Controllers
         // GET: VehiculoController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            VehiculoModelo vehiculo = Contexto.Vehiculos.Include(v => v.Serie).ThenInclude(s => s.Marca).FirstOrDefault(v => v.ID == id);
+            return View(vehiculo);
         }
 
         // POST: VehiculoController/Delete/5
@@ -99,6 +101,9 @@ namespace MVC26.Controllers
         {
             try
             {
+                VehiculoModelo vehiculo = Contexto.Vehiculos.Find(id);
+                Contexto.Vehiculos.Remove(vehiculo);
+                Contexto.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch

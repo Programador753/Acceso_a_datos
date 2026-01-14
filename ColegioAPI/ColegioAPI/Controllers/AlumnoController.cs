@@ -55,14 +55,7 @@ namespace ColegioAPI.Controllers
             await Context.SaveChangesAsync();
             return alumno;
         }
-
-        // POST api/<AlumnoController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-
-        }
-
+        
         // PUT api/<AlumnoController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
