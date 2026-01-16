@@ -58,9 +58,9 @@
               "Title": "AlumnoController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\AlumnoController.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Controllers\\AlumnoController.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\AlumnoController.cs*",
-              "RelativeToolTip": "ColegioAPI\\Controllers\\AlumnoController.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswDkAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\AlumnoController.cs",
+              "RelativeToolTip": "ColegioAPI\\Controllers\\AlumnoController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T07:54:12.334Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "ColegioAPI\\Models\\Alumno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T07:23:22.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T07:23:22.11Z"
             }
           ]
         }

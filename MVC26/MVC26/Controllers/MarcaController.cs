@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MVC26.Models;
 
 namespace MVC26.Controllers
@@ -16,6 +17,12 @@ namespace MVC26.Controllers
         public ActionResult Index()
         {
             return View(Contexto.Marcas);
+        }
+        // GET: MarcaController/Listado
+        public ActionResult Listado()
+        {
+            List<MarcaModelo> lista = Contexto.Marcas.Include("Series").ToList();
+            return View(lista);
         }
 
         // GET: MarcaController/Details/5
