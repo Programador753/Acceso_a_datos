@@ -21,8 +21,9 @@ namespace MVC26.Controllers
         // GET: SerieController/Listado
         public ActionResult Listado(int id)
         {
-            List<SerieModelo> lista = Contexto.Series.Where(s => s.MarcaID == id).Include(s => s.Marca).ToList();
-            return View(lista);
+            MarcaModelo marca = Contexto.Marcas.Include(m => m.Series).FirstOrDefault(m => m.ID == id);
+            // List<SerieModelo> lista = Contexto.Series.Where(s => s.MarcaID == id).Include(s => s.Marca).ToList();
+            return View(marca);
         }
 
         // GET: SerieController/Details/5

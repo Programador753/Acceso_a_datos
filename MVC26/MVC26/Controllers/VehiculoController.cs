@@ -42,6 +42,24 @@ namespace MVC26.Controllers
             return View(vehiculo);
         }
 
+        // GET: VehiculoController/Listado (Pantalla con filtro de select Marcas y select Series)
+        public ActionResult Listado(int? marcaId, int? serieId)
+        {
+            ViewBag.Marcas = new SelectList(Contexto.Marcas, "ID", "Nom_Marca", marcaId);
+            ViewBag.Series = new SelectList(Contexto.Series, "ID", "Nom_Serie", serieId);
+
+            var lista = Contexto.Vehiculos.Include(v => v.Serie).ThenInclude(s => s.Marca).AsQueryable();
+            if (marcaId.HasValue)
+            {
+                lista = lista.Where(v => v.Serie.MarcaID == marcaId.Value);
+            }
+            if (serieId.HasValue)
+            {
+                lista = lista.Where(v => v.SerieID == serieId.Value);
+            }
+            return View(lista);
+        }
+
         // GET: VehiculoController/Create
         public ActionResult Create()
         {
