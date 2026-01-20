@@ -46,7 +46,7 @@ namespace MVC26.Controllers
         public ActionResult Listado(int? marcaId, int? serieId)
         {
             ViewBag.Marcas = new SelectList(Contexto.Marcas, "ID", "Nom_Marca", marcaId);
-            ViewBag.Series = new SelectList(Contexto.Series, "ID", "Nom_Serie", serieId);
+            ViewBag.Series = new SelectList(Contexto.Series.Where(s => s.MarcaID == marcaId), "ID", "Nom_Serie", serieId);
 
             var lista = Contexto.Vehiculos.Include(v => v.Serie).ThenInclude(s => s.Marca).AsQueryable();
             if (marcaId.HasValue)

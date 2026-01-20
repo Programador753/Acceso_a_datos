@@ -6,20 +6,19 @@
 
 <h1>Listado</h1>
 
-<form>
-<div class="form-group">
-    <label for="marcaId">Marca</label>
-    <select asp-items= "ViewBag.Marcas" class="form-control" id="marcaId" name="marcaId">
-        <option value="">-- Select Marca --</option>
-    </select>
-</div>
-<div class="form-group">
-    <label for="serieId">Serie</label>
-    <select asp-items= "ViewBag.Series" class="form-control" id="serieId" name="serieId">
-        <option value="">-- Select Serie --</option>
-    </select>
-</div>
-<button type="submit" class="btn btn-primary">Filtrar</button>
+<form method="get">
+    <div class="form-group">
+        <label for="marcaId">Marca</label>
+        <select id="marcaId" name="marcaId" class="form-control" asp-items="ViewBag.Marcas" onchange="this.form.submit()">
+            <option value="">-- Select Marca --</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="serieId">Serie</label>
+        <select id="serieId" name="serieId" class="form-control" asp-items="ViewBag.Series" onchange="this.form.submit()">
+            <option value="">-- Select Serie --</option>
+        </select>
+    </div>
 </form>
 
 <p>
@@ -27,21 +26,21 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Matricula)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Color)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Serie)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Serie)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Matricula)
@@ -58,6 +57,6 @@
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
