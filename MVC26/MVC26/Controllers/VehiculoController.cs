@@ -8,6 +8,22 @@ namespace MVC26.Controllers
 {
     public class VehiculoController : Controller
     {
+        public class VehiculoTotal
+        {
+            public string Nom_Marca { get; set; }
+            public string Nom_Serie { get; set; }
+            public string Matricula { get; set; }
+            public string Color { get; set; }
+
+        }
+
+        public ActionResult Listado2()
+        {
+            List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"SELECT dbo.Marcas.Nom_Marca, dbo.Series.Nom_Serie, dbo.Vehiculos.Matricula, dbo.Vehiculos.Color FROM dbo.Marcas INNER JOIN dbo.Series ON dbo.Marcas.ID = dbo.Series.MarcaID INNER JOIN dbo.Vehiculos ON dbo.Series.ID = dbo.Vehiculos.SerieID").ToList();
+            //List<VehiculoTotal> lista = Contexto.VistaTotal.ToList();
+            return View(lista);
+        }
+
         public Contexto Contexto { get; }
         public VehiculoController(Contexto contexto)
         {

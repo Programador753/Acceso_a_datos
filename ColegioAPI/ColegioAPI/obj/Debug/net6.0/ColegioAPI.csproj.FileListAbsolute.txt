@@ -61,10 +61,10 @@ C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\staticwebassets.build.json.cache
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\ColegioAPI.csproj.Up2Date
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\ColegioAPI.dll
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\refint\ColegioAPI.dll
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\ColegioAPI.pdb
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\ColegioAPI.genruntimeconfig.cache
 C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\ref\ColegioAPI.dll
+C:\Users\anton\Desktop\2ºGS\ACCESO_A_DATOS\Acceso_a_datos\ColegioAPI\ColegioAPI\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
