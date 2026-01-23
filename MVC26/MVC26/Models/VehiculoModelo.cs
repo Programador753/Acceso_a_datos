@@ -6,6 +6,8 @@
         public string Matricula { get; set; }
         public string Color { get; set; }
         public SerieModelo Serie { get; set; }
+        public ClienteModelo Cliente { get; set; }
         public int SerieID { get; set; }
+        public int ClienteID { get; set; }
     }
 }

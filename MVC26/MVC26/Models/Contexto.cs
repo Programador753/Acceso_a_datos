@@ -18,5 +18,6 @@ namespace MVC26.Models
         public DbSet<SerieModelo> Series { get; set; }
         public DbSet<VehiculoModelo> Vehiculos { get; set; }
         public DbSet<VehiculoTotal> VistaTotal { get; set; }
+        public DbSet<ClienteModelo> Clientes { get; set; }
     }
 }

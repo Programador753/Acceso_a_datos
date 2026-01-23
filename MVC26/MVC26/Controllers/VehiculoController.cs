@@ -19,9 +19,15 @@ namespace MVC26.Controllers
 
         public ActionResult Listado2()
         {
-            List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"SELECT dbo.Marcas.Nom_Marca, dbo.Series.Nom_Serie, dbo.Vehiculos.Matricula, dbo.Vehiculos.Color FROM dbo.Marcas INNER JOIN dbo.Series ON dbo.Marcas.ID = dbo.Series.MarcaID INNER JOIN dbo.Vehiculos ON dbo.Series.ID = dbo.Vehiculos.SerieID").ToList();
-            //List<VehiculoTotal> lista = Contexto.VistaTotal.ToList();
+            //List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"SELECT dbo.Marcas.Nom_Marca, dbo.Series.Nom_Serie, dbo.Vehiculos.Matricula, dbo.Vehiculos.Color FROM dbo.Marcas INNER JOIN dbo.Series ON dbo.Marcas.ID = dbo.Series.MarcaID INNER JOIN dbo.Vehiculos ON dbo.Series.ID = dbo.Vehiculos.SerieID").ToList();
+            List<VehiculoTotal> lista = Contexto.VistaTotal.ToList();
             return View(lista);
+        }
+
+        public ActionResult Listado3()
+        {
+
+            return View();
         }
 
         public Contexto Contexto { get; }
