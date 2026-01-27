@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\models\\vehiculomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\models\\vehiculomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\controllers\\vehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\controllers\\vehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\listado3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\views\\vehiculo\\listado3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\views\\vehiculo\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\listado2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\views\\vehiculo\\listado2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\models\\vehiculomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\models\\vehiculomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\listado2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\views\\vehiculo\\listado2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\models\\clientemodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\models\\clientemodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\views\\vehiculo\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|solutionrelative:mvc26\\views\\vehiculo\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A1F14E-52CA-4867-B6F6-A21FED3147BE}|MVC26\\MVC26.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\mvc26\\mvc26\\controllers\\seriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Listado3.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado3.cshtml",
+              "RelativeDocumentMoniker": "MVC26\\Views\\Vehiculo\\Listado3.cshtml",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado3.cshtml",
+              "RelativeToolTip": "MVC26\\Views\\Vehiculo\\Listado3.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T11:38:31.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VehiculoModelo.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Models\\VehiculoModelo.cs",
               "RelativeDocumentMoniker": "MVC26\\Models\\VehiculoModelo.cs",
@@ -87,33 +100,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClienteModelo.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Models\\ClienteModelo.cs",
-              "RelativeDocumentMoniker": "MVC26\\Models\\ClienteModelo.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Models\\ClienteModelo.cs",
-              "RelativeToolTip": "MVC26\\Models\\ClienteModelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T12:52:31.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Listado2.cshtml",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado2.cshtml",
               "RelativeDocumentMoniker": "MVC26\\Views\\Vehiculo\\Listado2.cshtml",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado2.cshtml",
               "RelativeToolTip": "MVC26\\Views\\Vehiculo\\Listado2.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-21T10:44:34.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Contexto.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Models\\Contexto.cs",
               "RelativeDocumentMoniker": "MVC26\\Models\\Contexto.cs",
@@ -121,12 +121,11 @@
               "RelativeToolTip": "MVC26\\Models\\Contexto.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T10:27:54.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T10:27:54.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Create.cshtml",
               "RelativeDocumentMoniker": "MVC26\\Views\\Vehiculo\\Create.cshtml",
@@ -134,31 +133,30 @@
               "RelativeToolTip": "MVC26\\Views\\Vehiculo\\Create.cshtml",
               "ViewState": "AgIAABAAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T12:24:49.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T12:24:49.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Listado.cshtml",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado.cshtml",
               "RelativeDocumentMoniker": "MVC26\\Views\\Vehiculo\\Listado.cshtml",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Views\\Vehiculo\\Listado.cshtml",
               "RelativeToolTip": "MVC26\\Views\\Vehiculo\\Listado.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-19T12:03:48.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VehiculoController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Controllers\\VehiculoController.cs",
               "RelativeDocumentMoniker": "MVC26\\Controllers\\VehiculoController.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\MVC26\\MVC26\\Controllers\\VehiculoController.cs",
               "RelativeToolTip": "MVC26\\Controllers\\VehiculoController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswB4AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-19T11:52:57.864Z",
               "EditorCaption": ""

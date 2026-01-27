@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using MVC26.Models;
 
@@ -19,15 +20,20 @@ namespace MVC26.Controllers
 
         public ActionResult Listado2()
         {
-            //List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"SELECT dbo.Marcas.Nom_Marca, dbo.Series.Nom_Serie, dbo.Vehiculos.Matricula, dbo.Vehiculos.Color FROM dbo.Marcas INNER JOIN dbo.Series ON dbo.Marcas.ID = dbo.Series.MarcaID INNER JOIN dbo.Vehiculos ON dbo.Series.ID = dbo.Vehiculos.SerieID").ToList();
-            List<VehiculoTotal> lista = Contexto.VistaTotal.ToList();
+            List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"SELECT dbo.Marcas.Nom_Marca, dbo.Series.Nom_Serie, dbo.Vehiculos.Matricula, dbo.Vehiculos.Color FROM dbo.Marcas INNER JOIN dbo.Series ON dbo.Marcas.ID = dbo.Series.MarcaID INNER JOIN dbo.Vehiculos ON dbo.Series.ID = dbo.Vehiculos.SerieID").ToList();
+            //List<VehiculoTotal> lista = Contexto.VistaTotal.ToList();
             return View(lista);
         }
 
-        public ActionResult Listado3()
+        public ActionResult Listado3(string color ="%")
         {
+            var unColor = new SqlParameter("@ColorSel", color);
+            var coloresDisponibles = Contexto.Vehiculos.Select(v => v.Color).Distinct().ToList();
 
-            return View();
+            ViewBag.Colores = new SelectList(coloresDisponibles, color);
+
+            List<VehiculoTotal> lista = Contexto.VistaTotal.FromSql($"EXECUTE getSeriesVehiculos {color}").ToList();
+            return View(lista);
         }
 
         public Contexto Contexto { get; }
