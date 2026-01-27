@@ -310,6 +310,27 @@
           "fnac": {
             "type": "string",
             "format": "date-time"
+          },
+          "pais": {
+            "$ref": "#/components/schemas/Pais"
+          },
+          "paisID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pais": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomPais": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
