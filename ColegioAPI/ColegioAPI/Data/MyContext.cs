@@ -10,6 +10,6 @@ namespace ColegioAPI.Data
         }
 
         public DbSet<Alumno> Alumnos { get; set; }
-        public DbSet<Pais> Pais { get; set; }
+        public DbSet<Pais> Paises { get; set; }
     }
 }
