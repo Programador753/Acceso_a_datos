@@ -70,25 +70,23 @@
               "Title": "PaisController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\PaisController.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Controllers\\PaisController.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\PaisController.cs*",
-              "RelativeToolTip": "ColegioAPI\\Controllers\\PaisController.cs*",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\PaisController.cs",
+              "RelativeToolTip": "ColegioAPI\\Controllers\\PaisController.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T08:39:40.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T08:39:40.948Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ColegioAPI",
+              "Title": "ColegioAPI.csproj",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\ColegioAPI.csproj",
               "RelativeDocumentMoniker": "ColegioAPI\\ColegioAPI.csproj",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\ColegioAPI.csproj",
               "RelativeToolTip": "ColegioAPI\\ColegioAPI.csproj",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-28T08:28:02.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T08:28:02.292Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "ColegioAPI\\Controllers\\AlumnoController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T08:13:55.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T08:13:55.925Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "RelativeToolTip": "ColegioAPI\\Models\\Alumno.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:41:16.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T08:41:16.825Z"
             },
             {
               "$type": "Document",
@@ -126,8 +122,7 @@
               "RelativeToolTip": "ColegioAPI\\Models\\Pais.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:24:43.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T08:24:43.964Z"
             },
             {
               "$type": "Document",
@@ -139,8 +134,7 @@
               "RelativeToolTip": "ColegioAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T07:37:51.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T07:37:51.173Z"
             },
             {
               "$type": "Document",
@@ -148,8 +142,8 @@
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Data\\MyContext.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Data\\MyContext.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Data\\MyContext.cs*",
-              "RelativeToolTip": "ColegioAPI\\Data\\MyContext.cs*",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Data\\MyContext.cs",
+              "RelativeToolTip": "ColegioAPI\\Data\\MyContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T07:27:41.005Z",
