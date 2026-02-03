@@ -44,7 +44,11 @@ namespace MVC26.Controllers
         // GET: VehiculoController
         public ActionResult Index()
         {
-            var losCoches = Contexto.Vehiculos.Include(v => v.Serie).ThenInclude(s => s.Marca);
+            var losCoches = Contexto.Vehiculos
+                .Include(v => v.Serie)
+                .ThenInclude(s => s.Marca)
+                .Include(v => v.VehiculosExtras)
+                .ThenInclude(ve => ve.Extra);
             return View(losCoches);
         }
         // GET: VehiculoController/Busqueda
@@ -92,6 +96,7 @@ namespace MVC26.Controllers
         public ActionResult Create()
         {
             ViewBag.SerieID = new SelectList(Contexto.Series, "ID", "Nom_Serie");
+            ViewBag.VehiculoExtras = new MultiSelectList(Contexto.Extras, "ID", "Nom_Extra");
             return View();
         }
 
@@ -104,6 +109,18 @@ namespace MVC26.Controllers
             {
                 Contexto.Vehiculos.Add(vehiculo);
                 Contexto.SaveChanges();
+
+                foreach (var xtraID in vehiculo.VehiculosExtrasSeleccionados)
+                {
+                    var obj = new VehiculoExtraModelo()
+                    {
+                        extraID = xtraID,
+                        vehiculoID = vehiculo.ID
+                    };
+                    Contexto.VehiculosExtras.Add(obj);
+                }
+                Contexto.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -113,9 +130,29 @@ namespace MVC26.Controllers
         }
 
         // GET: VehiculoController/Edit/5
+        // GET: VehiculoController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            
+            var vehiculo = Contexto.Vehiculos
+                .Include(v => v.VehiculosExtras) // Incluir la relación con VehiculosExtras 
+                .FirstOrDefault(v => v.ID == id); // Incluir los extras asociados
+
+            if (vehiculo == null)
+            {
+                return NotFound();
+            }
+
+            // Preparar los datos para los SelectLists
+            ViewBag.SerieID = new SelectList(Contexto.Series, "ID", "Nom_Serie", vehiculo.SerieID);
+            
+            // Obtener los IDs de los extras seleccionados
+            vehiculo.VehiculosExtrasSeleccionados = vehiculo.VehiculosExtras.Select(ve => ve.extraID).ToList();
+
+            // Crear el MultiSelectList para los extras
+            ViewBag.VehiculoExtras = new MultiSelectList(Contexto.Extras, "ID", "Nom_Extra", vehiculo.VehiculosExtrasSeleccionados);
+
+            return View(vehiculo);
         }
 
         // POST: VehiculoController/Edit/5

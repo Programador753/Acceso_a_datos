@@ -8,6 +8,6 @@ namespace MVC26.Models
         public string Nom_Extra { get; set; }
         public List<VehiculoExtraModelo> ExtraVehiculos { get; set; }
         [NotMapped]
-        public List<int> VehiculoSeleccionados { get; set; }
+        public List<int> VehiculosExtrasSeleccionados { get; set; }
     }
 }

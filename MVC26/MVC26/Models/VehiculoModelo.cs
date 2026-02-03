@@ -11,6 +11,6 @@ namespace MVC26.Models
         public int SerieID { get; set; }
         public List<VehiculoExtraModelo> VehiculosExtras { get; set; }
         [NotMapped]
-        public List<int> ExtrasSeleccionados { get; set; }
+        public List<int> VehiculosExtrasSeleccionados { get; set; }
     }
 }

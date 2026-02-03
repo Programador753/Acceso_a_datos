@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Serie.Marca)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiculosExtrasSeleccionados)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,7 +44,21 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Serie.Marca.Nom_Marca)
-           </td>
+            </td>
+            <td>
+                @if (item.VehiculosExtras != null && item.VehiculosExtras.Any())
+                {
+                    foreach (var vehiculoExtra in item.VehiculosExtras)
+                    {
+                        @vehiculoExtra.Extra.Nom_Extra<br />
+                    }
+                }
+                else
+                {
+                    <text>No Extras</text>
+                }
+            </td>
+
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |

@@ -38,6 +38,13 @@ namespace ColegioAPI.Controllers
             return await Context.Alumnos.Where(a => a.Nombre.Contains(busca)).ToListAsync();
         }
 
+        // GET api/<AlumnoController>/5
+        [HttpGet("porPais/{id}")]
+        public async Task<ActionResult<IEnumerable<Alumno>>> porPais(int id)
+        {
+            return await Context.Alumnos.Where(a => a.PaisID == id).ToListAsync();
+        }
+
         // POST api/<AlumnoController>
         [HttpPost]
         public async Task<ActionResult<Alumno>> Post([FromBody] Alumno alumno)
