@@ -74,8 +74,7 @@
               "RelativeToolTip": "ColegioAPI\\Controllers\\PaisController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T08:39:40.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T08:39:40.948Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "ColegioAPI\\Models\\Pais.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:24:43.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T08:24:43.964Z"
             },
             {
               "$type": "Document",
@@ -149,8 +147,7 @@
               "RelativeToolTip": "ColegioAPI\\Data\\MyContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T07:27:41.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T07:27:41.005Z"
             }
           ]
         }
