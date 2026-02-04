@@ -11,11 +11,19 @@ builder.Services.AddTransient<AsignaturaRepositorio>();
 builder.Services.AddTransient<ProfesorRepositorio>();
 builder.Services.AddTransient<CalificacionRepositorio>();
 
-
 IConfiguration configuration = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json")
         .AddEnvironmentVariables()
         .Build();
+
+// Inyección de HttpClient para IAService
+builder.Services.AddHttpClient<IAService>();
+builder.Services.AddSingleton<IAService>(sp =>
+{
+    var httpClient = sp.GetRequiredService<HttpClient>();
+    var apiKey = builder.Configuration["OpenAI:ApiKey"];
+    return new IAService(httpClient, apiKey);
+});
 
 builder.Services.AddDbContext<ColegioDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("ColegioDBConnection")));
 
