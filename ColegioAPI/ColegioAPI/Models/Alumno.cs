@@ -9,6 +9,7 @@
         public int CursoID { get; set; }
         public string Sexo { get; set; }
         public DateTime Fnac { get; set; }
+        public Pais Pais { get; set; }
         public int PaisID { get; set; }
 
     }

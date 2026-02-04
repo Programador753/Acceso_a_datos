@@ -7,20 +7,16 @@
       "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\colegioapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -29,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\colegioapi\\colegioapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E831DF2-917C-4E04-961B-8E4ABD3908EC}|ColegioAPI\\ColegioAPI.csproj|solutionrelative:colegioapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,19 +66,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PaisController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\PaisController.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Controllers\\PaisController.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\PaisController.cs",
               "RelativeToolTip": "ColegioAPI\\Controllers\\PaisController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB8AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T08:39:40.948Z"
+              "WhenOpened": "2026-01-28T08:39:40.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ColegioAPI.csproj",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\ColegioAPI.csproj",
               "RelativeDocumentMoniker": "ColegioAPI\\ColegioAPI.csproj",
@@ -86,7 +87,8 @@
               "RelativeToolTip": "ColegioAPI\\ColegioAPI.csproj",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-28T08:28:02.292Z"
+              "WhenOpened": "2026-01-28T08:28:02.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,38 +98,40 @@
               "RelativeDocumentMoniker": "ColegioAPI\\Controllers\\AlumnoController.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Controllers\\AlumnoController.cs",
               "RelativeToolTip": "ColegioAPI\\Controllers\\AlumnoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-28T08:13:55.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Alumno.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Models\\Alumno.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Models\\Alumno.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Models\\Alumno.cs",
               "RelativeToolTip": "ColegioAPI\\Models\\Alumno.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:41:16.825Z"
+              "WhenOpened": "2026-01-27T08:41:16.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Pais.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Models\\Pais.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Models\\Pais.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Models\\Pais.cs",
               "RelativeToolTip": "ColegioAPI\\Models\\Pais.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:24:43.964Z"
+              "WhenOpened": "2026-01-27T08:24:43.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Program.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Program.cs",
@@ -135,11 +139,12 @@
               "RelativeToolTip": "ColegioAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T07:37:51.173Z"
+              "WhenOpened": "2025-12-05T07:37:51.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\ColegioAPI\\ColegioAPI\\Data\\MyContext.cs",
               "RelativeDocumentMoniker": "ColegioAPI\\Data\\MyContext.cs",
@@ -147,7 +152,8 @@
               "RelativeToolTip": "ColegioAPI\\Data\\MyContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T07:27:41.005Z"
+              "WhenOpened": "2025-12-05T07:27:41.005Z",
+              "EditorCaption": ""
             }
           ]
         }

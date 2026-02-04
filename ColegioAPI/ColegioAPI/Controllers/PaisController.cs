@@ -29,7 +29,7 @@ namespace ColegioAPI.Controllers
           {
               return NotFound();
           }
-            return await _context.Paises.ToListAsync();
+            return await _context.Paises.Include(p => p.Alumnos).ToListAsync();
         }
 
         // GET: api/Pais/5

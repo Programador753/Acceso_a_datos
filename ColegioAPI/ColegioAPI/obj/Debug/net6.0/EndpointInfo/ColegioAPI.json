@@ -545,6 +545,9 @@
             "type": "string",
             "format": "date-time"
           },
+          "pais": {
+            "$ref": "#/components/schemas/Pais"
+          },
           "paisID": {
             "type": "integer",
             "format": "int32"

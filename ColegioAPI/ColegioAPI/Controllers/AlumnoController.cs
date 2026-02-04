@@ -21,7 +21,7 @@ namespace ColegioAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Alumno>>> Get()
         {
-            return await Context.Alumnos.ToListAsync();
+            return await Context.Alumnos.Include("Pais").ToListAsync();
         }
 
         // GET api/<AlumnoController>/5

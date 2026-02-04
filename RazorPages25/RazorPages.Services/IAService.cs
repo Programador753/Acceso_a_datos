@@ -14,62 +14,74 @@ public class IAService
 
     public async Task<string> PreguntarAsync(string mensaje)
     {
-        // Llamada a la API local
-        var response = await _httpClient.GetAsync("https://localhost:7244/api/pais");
-        response.EnsureSuccessStatusCode();
-        var apiData = await response.Content.ReadAsStringAsync();
+        // 1. DEFINIR LAS TAREAS (No se ejecutan con await aún)
+        // Usamos GetStringAsync para obtener el cuerpo directamente
+        var taskAlumnos = _httpClient.GetStringAsync("https://localhost:7244/api/alumno");
+        var taskPaises = _httpClient.GetStringAsync("https://localhost:7244/api/pais");
 
-        // Llamada a la API de OpenRouter
-        var request = new HttpRequestMessage(HttpMethod.Post,
-            "https://openrouter.ai/api/v1/chat/completions");
+        // 
+
+        // 2. EJECUTAR EN PARALELO
+        // Esperamos a que ambas terminen. Esto es más rápido que hacer una y luego la otra.
+        await Task.WhenAll(taskAlumnos, taskPaises);
+
+        // 3. COMBINAR LOS DATOS
+        // Creamos un objeto anónimo para estructurar la información para la IA
+        var datosCombinados = new
+        {
+            Alumnos = JsonDocument.Parse(taskAlumnos.Result).RootElement, // Parseamos para evitar doble stringify
+            Paises = JsonDocument.Parse(taskPaises.Result).RootElement
+        };
+
+        string apiDataJson = JsonSerializer.Serialize(datosCombinados);
+
+        // 4. PREPARAR LLAMADA A OPENROUTER
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://openrouter.ai/api/v1/chat/completions");
 
         request.Headers.Add("Authorization", $"Bearer {_apiKey}");
-        request.Headers.Add("HTTP:Referer", "http://localhost");
+        // OpenRouter requiere estos headers para rankings (opcional pero recomendado)
+        request.Headers.Add("HTTP-Referer", "https://localhost/");
         request.Headers.Add("X-Title", "MiApp");
 
         var body = new
         {
-            model = "openai/gpt-oss-20b:free",
+            model = "openai/gpt-oss-20b", // Asegúrate de que este modelo exista y esté disponible
             messages = new[]
             {
                 new
                 {
-                    role = "system", content = @"RESPONDE SIGUIENDO REGLAS RIGIDAS:
-                                                   1) Responde UNICAMENTE en este formato:
-                                                    Encabezado con el nombre del grupo, seguido de dos puntos
-                                                    En la(s) línea(s) siguientes, lista con guiones cada elemento, uno por línea.
-                                                   2) No incluyas tablas, JSON, llaves, ni texto explicativo adicional.
-                                                   3) Ejemplo exacto de la salida deseada:
-                                                    Paises Americanos:
-                                                    -Brasil.
-                                                    -Canadá.
-                                                   4)Si no hay elementos que responder, responde 'No hay elementos que mostrar.'"
+                    role = "system",
+                    content = @"RESPONDE SIGUIENDO REGLAS RIGIDAS:
+                                1) Formato: Encabezado con nombre del grupo seguido de dos puntos.
+                                2) Lista con guiones, uno por línea.
+                                3) Sin JSON, tablas o explicaciones extra.
+                                4) Si está vacío: 'No hay elementos que mostrar.'"
                 },
-                new { role = "user", content = $"Datos: {apiData}" },
+                new { role = "user", content = $"Contexto de datos (JSON): {apiDataJson}" },
                 new { role = "user", content = $"Pregunta: {mensaje}" }
             }
         };
-
 
         request.Content = new StringContent(
             JsonSerializer.Serialize(body),
             Encoding.UTF8,
             "application/json");
 
-
+        // 5. ENVIAR Y PROCESAR RESPUESTA
         var apiResponse = await _httpClient.SendAsync(request);
-        var json = await apiResponse.Content.ReadAsStringAsync();
+        var jsonResponse = await apiResponse.Content.ReadAsStringAsync();
 
-        using var doc = JsonDocument.Parse(json);
-
-        if (doc.RootElement.TryGetProperty("choices", out var choices))
+        if (!apiResponse.IsSuccessStatusCode)
         {
-            var content = choices[0].GetProperty("message").GetProperty("content").GetString();
-            return content;
+            return $"Error {apiResponse.StatusCode}: {jsonResponse}";
         }
 
-        // Manejo de error si la respuesta no es la esperada
-        return "Error: No se pudo obtener una respuesta válida de la API.\n\n " + json;
+        using var doc = JsonDocument.Parse(jsonResponse);
+        if (doc.RootElement.TryGetProperty("choices", out var choices) && choices.GetArrayLength() > 0)
+        {
+            return choices[0].GetProperty("message").GetProperty("content").GetString();
+        }
 
+        return "Error: La respuesta de la IA no tiene el formato esperado.";
     }
 }
