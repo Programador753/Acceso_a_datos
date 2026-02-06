@@ -14,74 +14,80 @@ public class IAService
 
     public async Task<string> PreguntarAsync(string mensaje)
     {
-        // 1. DEFINIR LAS TAREAS (No se ejecutan con await aún)
-        // Usamos GetStringAsync para obtener el cuerpo directamente
-        var taskAlumnos = _httpClient.GetStringAsync("https://localhost:7244/api/alumno");
-        var taskPaises = _httpClient.GetStringAsync("https://localhost:7244/api/pais");
+        // Llamadas paralelas a las tres APIs
+        var taskCalificaciones = _httpClient.GetAsync("https://localhost:7244/api/calificacion");
+        var taskPaises = _httpClient.GetAsync("https://localhost:7244/api/Pais");
+        var taskAlumnos = _httpClient.GetAsync("https://localhost:7244/api/Alumno");
 
-        // 
+        await Task.WhenAll(taskCalificaciones, taskPaises, taskAlumnos);
 
-        // 2. EJECUTAR EN PARALELO
-        // Esperamos a que ambas terminen. Esto es más rápido que hacer una y luego la otra.
-        await Task.WhenAll(taskAlumnos, taskPaises);
+        // Verificar que todas las respuestas fueron exitosas
+        taskCalificaciones.Result.EnsureSuccessStatusCode();
+        taskPaises.Result.EnsureSuccessStatusCode();
+        taskAlumnos.Result.EnsureSuccessStatusCode();
 
-        // 3. COMBINAR LOS DATOS
-        // Creamos un objeto anónimo para estructurar la información para la IA
-        var datosCombinados = new
-        {
-            Alumnos = JsonDocument.Parse(taskAlumnos.Result).RootElement, // Parseamos para evitar doble stringify
-            Paises = JsonDocument.Parse(taskPaises.Result).RootElement
-        };
+        // Leer el contenido de cada respuesta
+        var calificacionesData = await taskCalificaciones.Result.Content.ReadAsStringAsync();
+        var paisesData = await taskPaises.Result.Content.ReadAsStringAsync();
+        var alumnosData = await taskAlumnos.Result.Content.ReadAsStringAsync();
 
-        string apiDataJson = JsonSerializer.Serialize(datosCombinados);
+        // Combinar todos los datos
+        var apiData = $@"
+        CALIFICACIONES: {calificacionesData}
 
-        // 4. PREPARAR LLAMADA A OPENROUTER
+        PAISES: {paisesData}
+
+        ALUMNOS: {alumnosData}";
+
         var request = new HttpRequestMessage(HttpMethod.Post, "https://openrouter.ai/api/v1/chat/completions");
 
         request.Headers.Add("Authorization", $"Bearer {_apiKey}");
-        // OpenRouter requiere estos headers para rankings (opcional pero recomendado)
-        request.Headers.Add("HTTP-Referer", "https://localhost/");
+        request.Headers.Add("HTTP-Referer", "http://localhost/");
         request.Headers.Add("X-Title", "MiApp");
 
         var body = new
         {
-            model = "openai/gpt-oss-20b", // Asegúrate de que este modelo exista y esté disponible
+            model = "openai/gpt-oss-20b",
             messages = new[]
             {
-                new
-                {
-                    role = "system",
-                    content = @"RESPONDE SIGUIENDO REGLAS RIGIDAS:
-                                1) Formato: Encabezado con nombre del grupo seguido de dos puntos.
-                                2) Lista con guiones, uno por línea.
-                                3) Sin JSON, tablas o explicaciones extra.
-                                4) Si está vacío: 'No hay elementos que mostrar.'"
-                },
-                new { role = "user", content = $"Contexto de datos (JSON): {apiDataJson}" },
-                new { role = "user", content = $"Pregunta: {mensaje}" }
+                new { role = "system", content = @"RESPONDE SIGUIENDO REGLAS RIGIDAS:
+                        Devuelve EXLCUSIVAMENTE un JSON valido.
+                        No escribas texto adicional.
+                        No uses Markdown.
+                        No uses explicaciones.
+                        No uses comillas simples.
+                        No escribas encabezados.
+                        Si en una columna te sale un valor numérico conviertelo a string.
+                        El JSON DEBE tener exactamente esta estructura;
+                        {
+                            'columns': ['Columna1', 'Columna2'],
+                            'rows': [
+                                ['valor', 'valor2'],
+                                ['valor1', 'valor2']
+                            ]
+                        }
+                        Si no hay elementos, responde el encabezado seguido de '- (ninguno)." },
+                new { role = "user", content = $"Datos disponibles: {apiData}\n\nPregunta: {mensaje}" }
             }
         };
 
         request.Content = new StringContent(
             JsonSerializer.Serialize(body),
             Encoding.UTF8,
-            "application/json");
+            "application/json"
+        );
 
-        // 5. ENVIAR Y PROCESAR RESPUESTA
         var apiResponse = await _httpClient.SendAsync(request);
-        var jsonResponse = await apiResponse.Content.ReadAsStringAsync();
+        var json = await apiResponse.Content.ReadAsStringAsync();
 
-        if (!apiResponse.IsSuccessStatusCode)
-        {
-            return $"Error {apiResponse.StatusCode}: {jsonResponse}";
-        }
+        using var doc = JsonDocument.Parse(json);
 
-        using var doc = JsonDocument.Parse(jsonResponse);
         if (doc.RootElement.TryGetProperty("choices", out var choices) && choices.GetArrayLength() > 0)
         {
-            return choices[0].GetProperty("message").GetProperty("content").GetString();
+            var content = choices[0].GetProperty("message").GetProperty("content").GetString();
+            return content ?? "Respuesta vacía de la IA.";
         }
 
-        return "Error: La respuesta de la IA no tiene el formato esperado.";
+        return $"Error de la IA: {json}";
     }
 }

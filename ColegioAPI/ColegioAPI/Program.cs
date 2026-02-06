@@ -11,6 +11,8 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader());
 });
 
+builder.Services.AddScoped<CalificacionRepositorio>();
+
 // Add services to the container.
 
 builder.Services.AddControllers();
