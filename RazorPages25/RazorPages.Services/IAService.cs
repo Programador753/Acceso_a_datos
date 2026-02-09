@@ -62,7 +62,7 @@ public class IAService
                         {
                             'columns': ['Columna1', 'Columna2'],
                             'rows': [
-                                ['valor', 'valor2'],
+                                ['valor1', 'valor2'],
                                 ['valor1', 'valor2']
                             ]
                         }

@@ -1,0 +1,43 @@
+﻿@page
+@model RazorPages25.Pages.ConsultasIA.GeneralModel
+@{
+    ViewData["Title"] = "Pregunta a la IA";
+}
+
+<h1>Pregunta a la IA usando tu API local</h1>
+
+<form method="post">
+    <input type="text" name="Pregunta" style="width: 500px" placeholder="Escribe tu pregunta" required />
+    <button type="submit">Enviar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Respuesta))
+{
+    <div>
+        <h3>Respuesta:</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    @foreach (var col in Model.Tabla.Columns)
+                    {
+                        <th>@col</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+            @if (Model.Tabla != null)
+                {
+                    foreach (var fila in Model.Tabla.Rows)
+                    {
+                        <tr>
+                            @foreach (var celda in fila)
+                            {
+                                <td>@celda</td>
+                            }
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+}
