@@ -1,8 +1,7 @@
 ﻿using ColegioAPI.Data;
 using ColegioAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.EntityFrameworkCore;
 
 namespace ColegioAPI.Controllers
 {
@@ -10,42 +9,71 @@ namespace ColegioAPI.Controllers
     [ApiController]
     public class CalificacionController : ControllerBase
     {
-        public CalificacionRepositorio Repositorio { get; }
+        private readonly CalificacionRepositorio _repositorio;
+
         public CalificacionController(CalificacionRepositorio repositorio)
         {
-            Repositorio = repositorio;
+            _repositorio = repositorio;
         }
 
-        // GET: api/<CalificacionController>
+        // GET: api/Calificacion
+        // Esta ruta coincide con 'this.apiUrl + /Calificacion' en Angular
+        // Devuelve la lista CON detalles (Alumno y Asignatura)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Calificacion>>> Get()
         {
-            return await Repositorio.ObtenerCalificacionesAsync();
+            return await _repositorio.ObtenerCalificacionesAsync();
         }
 
-        // GET api/<CalificacionController>/5
+        // GET: api/Calificacion/simple
+        // Ruta extra por si necesitas la lista cruda (sin includes) para pruebas
+        [HttpGet("simple")]
+        public async Task<ActionResult<IEnumerable<Calificacion>>> GetAllSimple()
+        {
+            return await _repositorio.Context.Calificaciones.ToListAsync();
+        }
+
+        // GET: api/Calificacion/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Calificacion>> Get(int id)
         {
-            return "value";
+            var calificacion = await _repositorio.Context.Calificaciones.FindAsync(id);
+            if (calificacion == null) return NotFound();
+            return calificacion;
         }
 
-        // POST api/<CalificacionController>
+        // POST: api/Calificacion
+        // Recibe los datos del formulario de Angular
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Calificacion>> Post([FromBody] Calificacion calificacion)
         {
+            if (calificacion == null) return BadRequest("Datos inválidos");
+
+            // Si el ID es distinto de 0, actualizamos; si no, creamos.
+            if (calificacion.ID != 0)
+            {
+                // Entity Framework 'Update' maneja el estado 'Modified' automáticamente
+                _repositorio.Context.Calificaciones.Update(calificacion);
+            }
+            else
+            {
+                _repositorio.Context.Calificaciones.Add(calificacion);
+            }
+
+            await _repositorio.Context.SaveChangesAsync();
+            return Ok(calificacion);
         }
 
-        // PUT api/<CalificacionController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CalificacionController>/5
+        // DELETE: api/Calificacion/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var calificacion = await _repositorio.Context.Calificaciones.FindAsync(id);
+            if (calificacion == null) return NotFound();
+
+            _repositorio.Context.Calificaciones.Remove(calificacion);
+            await _repositorio.Context.SaveChangesAsync();
+            return NoContent();
         }
     }
 }

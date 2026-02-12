@@ -1,0 +1,62 @@
+﻿@model IEnumerable<AntonioMVCv1.Models.Autor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.nom_autor)</th>
+        <th>@Html.DisplayNameFor(model => model.apellido1)</th>
+        <th>@Html.DisplayNameFor(model => model.apellido2)</th>
+        <th>@Html.DisplayNameFor(model => model.pais)</th>
+        <th>@Html.DisplayNameFor(model => model.localidad)</th>
+        <th>Premios</th> <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.nom_autor)</td>
+            <td>@Html.DisplayFor(modelItem => item.apellido1)</td>
+            <td>@Html.DisplayFor(modelItem => item.apellido2)</td>
+            
+            <td>
+                @if(item.pais != null) {
+                    @item.pais.nom_pais  }
+            </td>
+
+            <td>@Html.DisplayFor(modelItem => item.localidad)</td>
+
+            <td>
+                @if (item.AutorPremios != null && item.AutorPremios.Any())
+                {
+                    <ul>
+                        @foreach (var ap in item.AutorPremios)
+                        {
+                            // Access the 'premio' inside the 'AutorPremio' object
+                            <li>@ap.premio?.nom_premio (@ap.anio)</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <span>-</span>
+                }
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
