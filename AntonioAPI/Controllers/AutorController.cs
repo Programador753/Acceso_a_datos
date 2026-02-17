@@ -43,6 +43,20 @@ namespace AntonioAPI.Controllers
         public void Post([FromBody] string value)
         {
         }
+        [HttpPost]
+        [Route("add")]
+        public async Task<ActionResult<Autor>> Post(Autor autor)
+        {
+            try
+            {
+                var nuevoAutor = await Repo.AddAutorAsync(autor);
+                return Ok(nuevoAutor);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         // PUT api/<AutorController>/5
         [HttpPut("{id}")]

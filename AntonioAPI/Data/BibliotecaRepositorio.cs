@@ -37,5 +37,12 @@ namespace AntonioAPI.Data
                 .ToListAsync();
         }
 
+        public async Task<Autor> AddAutorAsync(Autor autor)
+        {
+            Context.Autores.Add(autor);
+            await Context.SaveChangesAsync();
+            return autor;
+        }
+
     }
 }
