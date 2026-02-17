@@ -21,5 +21,6 @@ namespace AntonioMVCv1.Models
         public string? localidad { get; set; }
 
         public List<AutorPremio>? AutorPremios { get; set; }
+        public List<AutorLibro>? AutorLibros { get; set; }
     }
 }

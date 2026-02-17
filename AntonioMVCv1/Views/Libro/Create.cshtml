@@ -1,0 +1,77 @@
+﻿@model AntonioMVCv1.Models.Libro
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Libro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nom_libro" class="control-label"></label>
+                <input asp-for="nom_libro" class="form-control" />
+                <span asp-validation-for="nom_libro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ano" class="control-label"></label>
+                <input asp-for="ano" class="form-control" />
+                <span asp-validation-for="ano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="portada" class="control-label"></label>
+                <input asp-for="portada" class="form-control" />
+                <span asp-validation-for="portada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nom_archivo" class="control-label"></label>
+                <input asp-for="nom_archivo" class="form-control" />
+                <span asp-validation-for="nom_archivo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pelicula" class="control-label"></label>
+                <input asp-for="pelicula" class="form-control" />
+                <span asp-validation-for="pelicula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="comentario" class="control-label"></label>
+                <input asp-for="comentario" class="form-control" />
+                <span asp-validation-for="comentario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="serieId" class="control-label"></label>
+                <input asp-for="serieId" class="form-control" />
+                <span asp-validation-for="serieId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="indice_serie" class="control-label"></label>
+                <input asp-for="indice_serie" class="form-control" />
+                <span asp-validation-for="indice_serie" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3 p-3 border rounded bg-light">
+                <label class="control-label fw-bold">Seleccionar Autores (Mantén Ctrl para varios)</label>
+
+                <select name="autoresSeleccionados"
+                        class="form-control"
+                        multiple="multiple"
+                        asp-items="ViewBag.ListaAutores">
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

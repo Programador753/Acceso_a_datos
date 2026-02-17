@@ -1,0 +1,95 @@
+﻿@model IEnumerable<AntonioMVCv1.Models.Libro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nom_libro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.portada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nom_archivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.comentario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.serieId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.indice_serie)
+            </th>
+            <th>
+                Autores
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nom_libro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.portada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nom_archivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comentario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.serieId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.indice_serie)
+            </td>
+                <td>
+                    @if (item.AutorLibros != null && item.AutorLibros.Any())
+                    {
+                        <ul style="padding-left: 15px; margin: 0;">
+                            @foreach (var relacion in item.AutorLibros)
+                            {
+                                <li>@relacion.autor?.nom_autor</li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <span>-</span>
+                    }
+                </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
