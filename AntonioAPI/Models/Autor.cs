@@ -15,7 +15,7 @@ namespace AntonioAPI.Models
         [DataType(DataType.Date)]
         public DateTime? f_def { get; set; }
         public int? paisId { get; set; }
-        public Pais pais { get; set; }
+        public Pais? pais { get; set; }
         public string? foto { get; set; }
         public string? biografia { get; set; }
         public string? localidad { get; set; }
