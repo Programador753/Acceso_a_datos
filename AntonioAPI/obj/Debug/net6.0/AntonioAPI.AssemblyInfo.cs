@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AntonioAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f9c767bf258272942c0d2446bab2394c41bc57b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77d1642b2a830ec95a0f2f86be6316b22040b590")]
 [assembly: System.Reflection.AssemblyProductAttribute("AntonioAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AntonioAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

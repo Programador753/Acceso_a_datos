@@ -1,6 +1,7 @@
 ﻿using AntonioAPI.Data;
 using AntonioAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AntonioAPI.Controllers
 {
@@ -15,6 +16,27 @@ namespace AntonioAPI.Controllers
         {
             _contexto = contexto;
             Repo = repo;
+        }
+
+        [HttpGet("autores-por-premio/{premioId}")]
+        public async Task<ActionResult<IEnumerable<AutorConAnio>>> GetAutoresPorPremio(int premioId)
+        {
+            var resultados = await _contexto.AutorPremios
+                .Include(ap => ap.autor) // Obligatorio para que traiga los datos del autor
+                .Where(ap => ap.premioId == premioId)
+                .Select(ap => new AutorConAnio
+                {
+                    anio = ap.anio,
+                    autor = ap.autor
+                })
+                .ToListAsync();
+
+            if (resultados == null || resultados.Count == 0)
+            {
+                return NotFound(new { mensaje = "No se encontraron autores con este premio." });
+            }
+
+            return Ok(resultados);
         }
 
         // GET: api/<AutorController>

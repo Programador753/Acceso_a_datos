@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\controllers\\premiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:controllers\\premiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\data\\bibliotecarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:data\\bibliotecarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autorconanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autorconanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autorpremio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autorpremio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\data\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:data\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\premio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\premio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autorpremio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autorpremio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:controllers\\paiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antonioapi\\data\\bibliotecarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24698CC9-BDE4-4422-82A6-FB7DBDBB5E5F}|AntonioAPI.csproj|solutionrelative:data\\bibliotecarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,29 +82,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PremioController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\PremioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PremioController.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\PremioController.cs",
+              "RelativeToolTip": "Controllers\\PremioController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wCEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:33:21.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutorConAnio.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorConAnio.cs",
+              "RelativeDocumentMoniker": "Models\\AutorConAnio.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorConAnio.cs",
+              "RelativeToolTip": "Models\\AutorConAnio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:03:06.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Premio.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Premio.cs",
+              "RelativeDocumentMoniker": "Models\\Premio.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Premio.cs",
+              "RelativeToolTip": "Models\\Premio.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:34:44.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutorPremio.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorPremio.cs",
+              "RelativeDocumentMoniker": "Models\\AutorPremio.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorPremio.cs",
+              "RelativeToolTip": "Models\\AutorPremio.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:34:41.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contexto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Data\\Contexto.cs",
+              "RelativeDocumentMoniker": "Data\\Contexto.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Data\\Contexto.cs",
+              "RelativeToolTip": "Data\\Contexto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T07:18:19.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibroController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\LibroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibroController.cs",
+              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\LibroController.cs",
+              "RelativeToolTip": "Controllers\\LibroController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T12:36:17.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PaisController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\PaisController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaisController.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\PaisController.cs",
               "RelativeToolTip": "Controllers\\PaisController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAgwDYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T10:07:18.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-17T07:25:45.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T10:07:18.095Z"
             },
             {
               "$type": "Document",
@@ -114,38 +178,39 @@
               "RelativeDocumentMoniker": "Models\\AutorLibro.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorLibro.cs",
               "RelativeToolTip": "Models\\AutorLibro.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T12:40:26.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "Models\\Libro.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Libro.cs",
               "RelativeToolTip": "Models\\Libro.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wA4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:40:14.578Z"
+              "WhenOpened": "2026-02-16T12:40:14.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Autor.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Autor.cs",
               "RelativeDocumentMoniker": "Models\\Autor.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Autor.cs",
               "RelativeToolTip": "Models\\Autor.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA5wBEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T12:36:29.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "BibliotecaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Data\\BibliotecaRepositorio.cs",
               "RelativeDocumentMoniker": "Data\\BibliotecaRepositorio.cs",
@@ -153,71 +218,7 @@
               "RelativeToolTip": "Data\\BibliotecaRepositorio.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:33:52.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutorController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\AutorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AutorController.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Controllers\\AutorController.cs",
-              "RelativeToolTip": "Controllers\\AutorController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:33:45.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:31:51.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Premio.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Premio.cs",
-              "RelativeDocumentMoniker": "Models\\Premio.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Premio.cs",
-              "RelativeToolTip": "Models\\Premio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:24:12.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AutorPremio.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorPremio.cs",
-              "RelativeDocumentMoniker": "Models\\AutorPremio.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\AutorPremio.cs",
-              "RelativeToolTip": "Models\\AutorPremio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:24:05.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pais.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Pais.cs",
-              "RelativeDocumentMoniker": "Models\\Pais.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioAPI\\Models\\Pais.cs",
-              "RelativeToolTip": "Models\\Pais.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:18:47.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T12:33:52.413Z"
             }
           ]
         }
