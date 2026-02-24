@@ -22,7 +22,7 @@ namespace AntonioAPI.Controllers
         public async Task<ActionResult<IEnumerable<AutorConAnio>>> GetAutoresPorPremio(int premioId)
         {
             var resultados = await _contexto.AutorPremios
-                .Include(ap => ap.autor) // Obligatorio para que traiga los datos del autor
+                .Include(ap => ap.autor) 
                 .Where(ap => ap.premioId == premioId)
                 .Select(ap => new AutorConAnio
                 {
@@ -80,16 +80,7 @@ namespace AntonioAPI.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, Autor autor)
         {
-            // NOTA: Para que el PUT funcione necesitarás crear el método UpdateAutorAsync en tu Repositorio
-            if (id != autor.id)
-            {
-                return BadRequest("El ID del autor no coincide");
-            }
-
-            _contexto.Entry(autor).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            await _contexto.SaveChangesAsync();
-
-            return NoContent();
+            return BadRequest("El método PUT no está implementado");
         }
 
         // DELETE api/<AutorController>/5

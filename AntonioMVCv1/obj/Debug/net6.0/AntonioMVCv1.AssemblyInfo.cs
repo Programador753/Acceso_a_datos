@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AntonioMVCv1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a43209c62b36ee281a633cfa7ba7e25b6b735f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e817e1c58d9a129a327885d0a9b2089c6fcce6f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AntonioMVCv1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AntonioMVCv1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

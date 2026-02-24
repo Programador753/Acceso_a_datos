@@ -1,0 +1,15 @@
+﻿namespace AntonioMVC.Models
+{
+    public class Noticia
+    {
+        public int Id { get; set; }
+        public string Guid { get; set; }
+        public string Titulo { get; set; }
+        public string Enlace { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime? FechaPublicacion { get; set; }
+        public string Fuente { get; set; }
+        public DateTime? FechaInsercion { get; set; }
+
+    }
+}

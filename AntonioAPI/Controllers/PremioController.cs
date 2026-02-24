@@ -29,6 +29,15 @@ namespace AntonioAPI.Controllers
             return Ok(premios);
         }
 
+        // GET: api/<PremioController>
+        [HttpGet("autor")]
+        public async Task<ActionResult<IEnumerable<Premio>>> GetPremiosTipoAutor()
+        {
+            // _contexto.Premio o _contexto.Premios dependiendo de cómo esté en tu DbContext
+            var premios = await _contexto.Premios.Where(p => p.tipo == "A").ToListAsync();
+            return Ok(premios);
+        }
+
         // GET api/<PremioController>/5
         [HttpGet("{id}")]
         public string Get(int id)

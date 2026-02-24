@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniomvcv1\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|solutionrelative:controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniomvcv1\\views\\libro\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|solutionrelative:views\\libro\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniomvcv1\\models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|solutionrelative:models\\autorlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniomvcv1\\views\\libro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D79DB730-E6F5-4ACF-A49A-6E4233FBE212}|AntonioMVCv1.csproj|solutionrelative:views\\libro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,58 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Views\\Libro\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Libro\\Create.cshtml",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Views\\Libro\\Create.cshtml",
-              "RelativeToolTip": "Views\\Libro\\Create.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAYwDwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-13T08:27:47.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Views\\Libro\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Libro\\Index.cshtml",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Views\\Libro\\Index.cshtml",
-              "RelativeToolTip": "Views\\Libro\\Index.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-13T07:22:29.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AutorLibro.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Models\\AutorLibro.cs",
-              "RelativeDocumentMoniker": "Models\\AutorLibro.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Models\\AutorLibro.cs",
-              "RelativeToolTip": "Models\\AutorLibro.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T12:45:24.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibroController.cs",
-              "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Controllers\\LibroController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibroController.cs",
-              "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioMVCv1\\Controllers\\LibroController.cs",
-              "RelativeToolTip": "Controllers\\LibroController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowEcAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T12:43:35.082Z",
-              "EditorCaption": ""
             }
           ]
         }
