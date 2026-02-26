@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace AntonioMVC.Controllers
 {
@@ -14,9 +15,25 @@ namespace AntonioMVC.Controllers
             Contexto = contexto;
         }
         // GET: NoticiaController
-        public ActionResult Index()
+        public ActionResult Index(List<int> categoriasFiltro)
         {
-            var noticias = Contexto.Noticia.ToList();
+            // Cargar todas las categorías para el filtro
+            ViewBag.Categorias = new MultiSelectList(Contexto.Categoria, "Id", "Nombre", categoriasFiltro);
+
+            // Obtener noticias con sus categorías relacionadas
+            var noticiasQuery = Contexto.Noticia
+                .Include(n => n.NoticiaCategorias)
+                .ThenInclude(nc => nc.Categoria)
+                .AsQueryable();
+
+            // Aplicar filtro si hay categorías seleccionadas
+            if (categoriasFiltro != null && categoriasFiltro.Any())
+            {
+                noticiasQuery = noticiasQuery.Where(n =>
+                    n.NoticiaCategorias.Any(nc => categoriasFiltro.Contains(nc.CategoriaId)));
+            }
+
+            var noticias = noticiasQuery.ToList();
             return View(noticias);
         }
 
@@ -30,6 +47,7 @@ namespace AntonioMVC.Controllers
         // GET: NoticiaController/Create
         public ActionResult Create()
         {
+            // Cargamos las categorías para el select de la vista
             ViewBag.CategoriaIds = new SelectList(Contexto.Categoria, "Id", "Nombre");
 
             return View();
@@ -37,9 +55,38 @@ namespace AntonioMVC.Controllers
 
         // POST: NoticiaController/Create
         [HttpPost]
-        public ActionResult Create()
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Noticia noticia)
         {
-           
+            try
+            {
+                noticia.Guid ??= Guid.NewGuid().ToString();
+                Contexto.Noticia.Add(noticia);
+                Contexto.SaveChanges();
+
+                // Verificar que CategoriasSeleccionados no sea null y contenga elementos
+                if (noticia.CategoriasSeleccionados != null && noticia.CategoriasSeleccionados.Any())
+                {
+                    foreach (var categoria in noticia.CategoriasSeleccionados)
+                    {
+                        var obj = new NoticiaCategoria()
+                        {
+                            NoticiaId = noticia.Id,
+                            CategoriaId = categoria
+                        };
+                        Contexto.NoticiaCategoria.Add(obj);
+                    }
+                    Contexto.SaveChanges();
+                }
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Si hay un error de base de datos, recargamos el select y volvemos a la vista
+                ViewBag.CategoriaIds = new SelectList(Contexto.Categoria, "Id", "Nombre");
+                return View(noticia);
+            }
         }
 
         // GET: NoticiaController/Edit/5

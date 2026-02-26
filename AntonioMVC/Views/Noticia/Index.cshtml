@@ -1,71 +1,72 @@
 ﻿@model IEnumerable<AntonioMVC.Models.Noticia>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista de Noticias";
 }
 
-<h1>Index</h1>
+<h1>Noticias</h1>
+
+<!-- Filtro de categorías -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Index" method="get">
+            <div class="row">
+                <div class="col-md-10">
+                    <label for="categoriasFiltro" class="form-label">Filtrar por categorías:</label>
+                    <select name="categoriasFiltro" id="categoriasFiltro" class="form-select" multiple size="5">
+                        @foreach (var item in ViewBag.Categorias as MultiSelectList)
+                        {
+                            <option value="@item.Value" selected="@item.Selected">@item.Text</option>
+                        }
+                    </select>
+                    <small class="form-text text-muted">Mantén presionado Ctrl (o Cmd en Mac) para seleccionar múltiples categorías</small>
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <div>
+                        <button type="submit" class="btn btn-primary mb-2">Filtrar</button>
+                        <a asp-action="Index" class="btn btn-secondary mb-2">Limpiar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Crear nueva noticia</a>
 </p>
-<table class="table">
+
+<table class="table table-striped">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Guid)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Enlace)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaPublicacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fuente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaInsercion)
-            </th>
-            <th></th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Categorías</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Guid)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Enlace)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaPublicacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fuente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaInsercion)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Titulo</td>
+                <td>@item.Descripcion</td>
+                <td>
+                    @if (item.NoticiaCategorias != null && item.NoticiaCategorias.Any())
+                    {
+                        @string.Join(", ", item.NoticiaCategorias.Select(nc => nc.Categoria.Nombre))
+                    }
+                    else
+                    {
+                        <span class="text-muted">Sin categorías</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
