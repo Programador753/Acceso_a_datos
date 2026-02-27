@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniohernandezapi\\models\\imagennoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|solutionrelative:models\\imagennoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniohernandezapi\\models\\noticiacategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|solutionrelative:models\\noticiacategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniohernandezapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|solutionrelative:models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|c:\\users\\anton\\desktop\\2\u00BAgs\\acceso_a_datos\\acceso_a_datos\\antoniohernandezapi\\models\\imagennoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D0A13E0-507B-4E16-B4B3-FA2578E3B451}|AntonioHernandezAPI.csproj|solutionrelative:models\\imagennoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "Models\\Categoria.cs",
@@ -70,12 +70,11 @@
               "RelativeToolTip": "Models\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T10:09:24.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T10:09:24.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NoticiaCategoria.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Models\\NoticiaCategoria.cs",
               "RelativeDocumentMoniker": "Models\\NoticiaCategoria.cs",
@@ -83,25 +82,24 @@
               "RelativeToolTip": "Models\\NoticiaCategoria.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T10:09:20.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T10:09:20.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ImagenNoticia.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Models\\ImagenNoticia.cs",
               "RelativeDocumentMoniker": "Models\\ImagenNoticia.cs",
               "ToolTip": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Models\\ImagenNoticia.cs",
               "RelativeToolTip": "Models\\ImagenNoticia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T10:08:52.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NoticiasController.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Controllers\\NoticiasController.cs",
               "RelativeDocumentMoniker": "Controllers\\NoticiasController.cs",
@@ -109,12 +107,11 @@
               "RelativeToolTip": "Controllers\\NoticiasController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAApwDQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T09:59:08.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T09:59:08.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Contexto.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Data\\Contexto.cs",
               "RelativeDocumentMoniker": "Data\\Contexto.cs",
@@ -122,12 +119,11 @@
               "RelativeToolTip": "Data\\Contexto.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAswA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T09:53:24.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T09:53:24.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Noticia.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Desktop\\2\u00BAGS\\ACCESO_A_DATOS\\Acceso_a_datos\\AntonioHernandezAPI\\Models\\Noticia.cs",
               "RelativeDocumentMoniker": "Models\\Noticia.cs",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "Models\\Noticia.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAArwBEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T09:52:14.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T09:52:14.152Z"
             }
           ]
         }

@@ -243,9 +243,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "noticia": {
-            "$ref": "#/components/schemas/Noticia"
-          },
           "urlImagen": {
             "type": "string",
             "nullable": true
