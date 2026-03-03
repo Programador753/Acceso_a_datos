@@ -1,0 +1,63 @@
+﻿@model AntonioMVC.Models.Meal
+
+@{
+    ViewData["Title"] = "Crear Meal";
+}
+
+<h1>Añadir nuevo Meal</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" required />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="IdCategory" class="control-label">Categoría</label>
+                <select asp-for="IdCategory"
+                        asp-items="ViewBag.CategoryIds"
+                        class="form-control">
+                    <option value="">-- Selecciona una categoría --</option>
+                </select>
+                <span asp-validation-for="IdCategory" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="IdArea" class="control-label">Área</label>
+                <select asp-for="IdArea"
+                        asp-items="ViewBag.AreaIds"
+                        class="form-control">
+                    <option value="">-- Selecciona un área --</option>
+                </select>
+                <span asp-validation-for="IdArea" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="IngredientsSeleccionados" class="control-label">Ingredientes</label>
+                <select asp-for="IngredientsSeleccionados"
+                        asp-items="ViewBag.IngredientIds"
+                        class="form-control"
+                        multiple>
+                </select>
+                <small class="form-text text-muted">Mantén presionado Ctrl (o Cmd en Mac) para seleccionar múltiples ingredientes</small>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Guardar Meal" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary ms-2">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AntonioHernandezAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e132c4e6ecf0abfd9dc1fd90954fc19ba768a3dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a323fcb5b6deffdafa1ced45303243b62dfaad87")]
 [assembly: System.Reflection.AssemblyProductAttribute("AntonioHernandezAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AntonioHernandezAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

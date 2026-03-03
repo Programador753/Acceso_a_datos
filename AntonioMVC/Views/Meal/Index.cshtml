@@ -1,0 +1,48 @@
+﻿@model IEnumerable<AntonioMVC.Models.Meal>
+
+@{
+    ViewData["Title"] = "Lista de Meals";
+}
+
+<h1>Meals</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Crear nuevo Meal</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Área</th>
+        <th>Ingredientes</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Category.Name</td>
+            <td>@item.Area.Name</td>
+            <td>
+                @if (item.MealIngredients != null && item.MealIngredients.Any())
+                {
+                    @string.Join(", ", item.MealIngredients.Select(mi => mi.Ingredient.Name))
+                }
+                else
+                {
+                    <span class="text-muted">Sin ingredientes</span>
+                }
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.IdMeal" class="btn btn-sm btn-info">Detalles</a>
+                <a asp-action="Edit" asp-route-id="@item.IdMeal" class="btn btn-sm btn-warning">Editar</a>
+                <a asp-action="Delete" asp-route-id="@item.IdMeal" class="btn btn-sm btn-danger">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

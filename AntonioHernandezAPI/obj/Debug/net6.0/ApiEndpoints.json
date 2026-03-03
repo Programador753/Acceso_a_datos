@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "AntonioHernandezAPI.Controllers.CategoriasController",
-    "Method": "GetCategorias",
-    "RelativePath": "api/Categorias",
+    "ContainingType": "AntonioHernandezAPI.Controllers.AreasController",
+    "Method": "GetArea",
+    "RelativePath": "api/Areas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AntonioHernandezAPI.Models.Area, AntonioHernandezAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,42 +20,22 @@
     ]
   },
   {
-    "ContainingType": "AntonioHernandezAPI.Controllers.NoticiasController",
-    "Method": "GetNoticia",
-    "RelativePath": "api/Noticias",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AntonioHernandezAPI.Models.Noticia, AntonioHernandezAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "AntonioHernandezAPI.Controllers.NoticiasController",
-    "Method": "PostNoticia",
-    "RelativePath": "api/Noticias",
+    "ContainingType": "AntonioHernandezAPI.Controllers.AreasController",
+    "Method": "PostArea",
+    "RelativePath": "api/Areas",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "noticia",
-        "Type": "AntonioHernandezAPI.Models.Noticia",
+        "Name": "area",
+        "Type": "AntonioHernandezAPI.Models.Area",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "AntonioHernandezAPI.Models.Noticia",
+        "Type": "AntonioHernandezAPI.Models.Area",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -66,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "AntonioHernandezAPI.Controllers.NoticiasController",
-    "Method": "GetNoticia",
-    "RelativePath": "api/Noticias/{id}",
+    "ContainingType": "AntonioHernandezAPI.Controllers.AreasController",
+    "Method": "GetArea",
+    "RelativePath": "api/Areas/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -81,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "AntonioHernandezAPI.Models.Noticia",
+        "Type": "AntonioHernandezAPI.Models.Area",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -92,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "AntonioHernandezAPI.Controllers.NoticiasController",
-    "Method": "PutNoticia",
-    "RelativePath": "api/Noticias/{id}",
+    "ContainingType": "AntonioHernandezAPI.Controllers.AreasController",
+    "Method": "PutArea",
+    "RelativePath": "api/Areas/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -105,17 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "noticia",
-        "Type": "AntonioHernandezAPI.Models.Noticia",
+        "Name": "area",
+        "Type": "AntonioHernandezAPI.Models.Area",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AntonioHernandezAPI.Controllers.NoticiasController",
-    "Method": "DeleteNoticia",
-    "RelativePath": "api/Noticias/{id}",
+    "ContainingType": "AntonioHernandezAPI.Controllers.AreasController",
+    "Method": "DeleteArea",
+    "RelativePath": "api/Areas/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -127,6 +107,250 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.CategorysController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categorys",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AntonioHernandezAPI.Models.Category, AntonioHernandezAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.CategorysController",
+    "Method": "PostCategory",
+    "RelativePath": "api/Categorys",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "AntonioHernandezAPI.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AntonioHernandezAPI.Models.Category",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.CategorysController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categorys/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AntonioHernandezAPI.Models.Category",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.CategorysController",
+    "Method": "PutCategory",
+    "RelativePath": "api/Categorys/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "category",
+        "Type": "AntonioHernandezAPI.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.CategorysController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categorys/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "GetMeal",
+    "RelativePath": "api/Meals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AntonioHernandezAPI.Models.Meal, AntonioHernandezAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "PostMeal",
+    "RelativePath": "api/Meals",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meal",
+        "Type": "AntonioHernandezAPI.Models.Meal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AntonioHernandezAPI.Models.Meal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "GetMeal",
+    "RelativePath": "api/Meals/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AntonioHernandezAPI.Models.Meal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "PutMeal",
+    "RelativePath": "api/Meals/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "meal",
+        "Type": "AntonioHernandezAPI.Models.Meal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "DeleteMeal",
+    "RelativePath": "api/Meals/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AntonioHernandezAPI.Controllers.MealsController",
+    "Method": "GetMealsByCategory",
+    "RelativePath": "api/Meals/category/{idCategory}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategory",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AntonioHernandezAPI.Models.Meal, AntonioHernandezAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "AntonioHernandezAPI.Controllers.WeatherForecastController",
