@@ -8,7 +8,7 @@ namespace AntonioHernandezAPI.Models
         public int Id { get; set; }
         public int NoticiaId { get; set; }
 
-        [JsonIgnore] // Agrega esto
+        [JsonIgnore]
         public Noticia noticia { get; set; }
         public string UrlImagen { get; set; }
         public string Tipo { get; set; }

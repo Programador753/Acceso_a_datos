@@ -89,8 +89,7 @@ namespace AntonioHernandezAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Noticias
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Noticia
         [HttpPost]
         public async Task<ActionResult<Noticia>> PostNoticia(Noticia noticia)
         {
