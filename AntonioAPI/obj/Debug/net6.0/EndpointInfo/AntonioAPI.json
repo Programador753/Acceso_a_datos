@@ -670,6 +670,44 @@
         }
       }
     },
+    "/api/Premio/autor": {
+      "get": {
+        "tags": [
+          "Premio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Premio"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Premio"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Premio"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Premio/{id}": {
       "get": {
         "tags": [
